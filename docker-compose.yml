@@ -1,0 +1,88 @@
+# One-command run:   docker compose up --build
+# Uses Ollama running on your host (http://localhost:11434). Pull models first:
+#   ollama pull qwen2.5:3b && ollama pull qwen2.5:7b && ollama pull bge-m3
+# No Ollama on the host? Run:  docker compose --profile with-ollama up --build
+#   and set OLLAMA_HOST=http://ollama:11434 in .env
+#
+# Services: postgres (data) · migrate (alembic upgrade + demo users, then exits)
+#           api (FastAPI) · worker (AI pipeline) · web (Next.js app on :3000)
+
+x-app: &app
+  build: .
+  env_file:
+    - path: .env
+      required: false
+  environment: &app-env
+    OLLAMA_HOST: ${OLLAMA_HOST:-http://host.docker.internal:11434}
+    DATABASE_URL: postgresql+psycopg://lumora:${POSTGRES_PASSWORD:-lumora-dev}@postgres:5432/lumora
+    CHROMA_DIR: /app/storage/chroma
+    JWT_SECRET: ${JWT_SECRET:-dev-insecure-change-me}
+  extra_hosts:
+    - "host.docker.internal:host-gateway"
+  volumes:
+    - storage:/app/storage
+
+services:
+  postgres:
+    image: postgres:16.4-alpine
+    environment:
+      POSTGRES_USER: lumora
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:-lumora-dev}
+      POSTGRES_DB: lumora
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U lumora -d lumora"]
+      interval: 5s
+      retries: 20
+
+  migrate:
+    <<: *app
+    command: ["sh", "-c", "alembic upgrade head && python -m scripts.seed_users"]
+    depends_on:
+      postgres:
+        condition: service_healthy
+
+  api:
+    <<: *app
+    ports: ["${API_PORT:-8000}:8000"]
+    depends_on:
+      migrate:
+        condition: service_completed_successfully
+    healthcheck:
+      test: ["CMD", "python", "-c", "import urllib.request; urllib.request.urlopen('http://localhost:8000/health')"]
+      interval: 10s
+      retries: 30
+
+  worker:
+    <<: *app
+    command: ["python", "-m", "app.worker"]
+    depends_on:
+      api:
+        condition: service_healthy   # api builds the vector index on first start
+
+  web:
+    build:
+      context: ./web
+      args:
+        API_URL: http://api:8000
+    environment:
+      API_URL: http://api:8000
+      # http://localhost is treated as secure by browsers; set false only for plain-HTTP LAN demos
+      COOKIE_SECURE: ${COOKIE_SECURE:-false}
+    ports: ["${WEB_PORT:-3000}:3000"]
+    depends_on:
+      api:
+        condition: service_healthy
+
+  ollama:
+    image: ollama/ollama:0.5.7
+    profiles: ["with-ollama"]
+    ports: ["11434:11434"]
+    volumes:
+      - ollama:/root/.ollama
+
+volumes:
+  storage:
+  pgdata:
+  ollama:

@@ -1,0 +1,21 @@
+[ 1/66] EV-01 ok  send         (exp send        )  224.9s
+[ 2/66] EV-02 ok  send         (exp send        )  190.0s
+[ 3/66] EV-03 ok  send         (exp send        )  202.0s
+[ 4/66] EV-04 ok  send         (exp send        )  300.7s
+[ 5/66] EV-05 ok  send         (exp send        )  228.9s
+[ 6/66] EV-06 ok  send         (exp send        )  170.5s
+[ 7/66] EV-07 ok  send         (exp send        )  197.5s
+[ 8/66] EV-08 ok  send         (exp send        )  186.0s
+[ 9/66] EV-09 ok  send         (exp send        )  169.4s
+[10/66] EV-10 ok  send         (exp send        )  156.0s
+[11/66] EV-11 ok  send         (exp send        )  169.2s
+[12/66] EV-12 ok  send         (exp send        )  149.4s
+[13/66] EV-13 ok  send         (exp send        )  180.6s
+[14/66] EV-14 MISS send         (exp human_review)  283.6s
+[15/66] EV-15 MISS send         (exp human_review)  234.9s
+[16/66] EV-16 ok  human_review (exp human_review)  329.5s
+[17/66] EV-17 ok  human_review (exp human_review)  386.3s
+[18/66] EV-18 ok  human_review (exp human_review)  453.3s
+[19/66] EV-19 ok  human_review (exp human_review)  265.2s
+[20/66] EV-20 ok  human_review (exp human_review)  363.9s
+[21/66] EV-21 ok  human_review (exp human_review)  281.9s

@@ -1,0 +1,2418 @@
+[
+  {
+    "id": "T-0001",
+    "subject": "Where is my order ORD-10045?",
+    "body": "Hi, I ordered the Volt 20K Power Bank last week and haven't received it. Can you check?",
+    "category": "shipping",
+    "priority": "P3",
+    "customer_email": "ali.garcia@example.net",
+    "resolution": "Shared tracking link and ETA from the order record. Explained standard shipping takes 3-7 business days (KB-012, KB-013).",
+    "kb_refs": [
+      "KB-012",
+      "KB-013"
+    ]
+  },
+  {
+    "id": "T-0002",
+    "subject": "Order ORD-10017 is late",
+    "body": "My Pulse Smartwatch was supposed to arrive days ago. Tracking hasn't moved.",
+    "category": "shipping",
+    "priority": "P3",
+    "customer_email": "james.porter@example.com",
+    "resolution": "Order was 6 business days past ETA, so a carrier trace was opened per KB-014. Customer updated with the trace timeline.",
+    "kb_refs": [
+      "KB-014"
+    ]
+  },
+  {
+    "id": "T-0003",
+    "subject": "Package lost",
+    "body": "Tracking for ORD-10066 says the package is lost. What now?",
+    "category": "shipping",
+    "priority": "P2",
+    "customer_email": "mia.darwish@example.com",
+    "resolution": "Carrier confirmed loss. Offered reshipment or refund per KB-015; customer chose reshipment.",
+    "kb_refs": [
+      "KB-015"
+    ]
+  },
+  {
+    "id": "T-0004",
+    "subject": "Change delivery address",
+    "body": "Can I change the address on order ORD-10071? I'm moving.",
+    "category": "shipping",
+    "priority": "P3",
+    "customer_email": "maya.chen@example.com",
+    "resolution": "Order was still processing, so the address was updated (KB-016).",
+    "kb_refs": [
+      "KB-016"
+    ]
+  },
+  {
+    "id": "T-0005",
+    "subject": "Do you ship to Canada?",
+    "body": "Hi Nora here, do you deliver internationally and who pays customs?",
+    "category": "shipping",
+    "priority": "P4",
+    "customer_email": "nora.rossi@example.com",
+    "resolution": "Explained international shipping times and that duties are paid by the recipient (KB-017).",
+    "kb_refs": [
+      "KB-017"
+    ]
+  },
+  {
+    "id": "T-0006",
+    "subject": "Charged twice for ORD-10026",
+    "body": "I see two charges on my card for the same order ORD-10026.",
+    "category": "billing",
+    "priority": "P2",
+    "customer_email": "lily.garcia@example.org",
+    "resolution": "One charge was a pending authorization that drops off in 3-5 business days (KB-002). Customer informed.",
+    "kb_refs": [
+      "KB-002"
+    ]
+  },
+  {
+    "id": "T-0007",
+    "subject": "Payment declined",
+    "body": "My card was declined on order ORD-10058 but the card works elsewhere.",
+    "category": "billing",
+    "priority": "P3",
+    "customer_email": "nora.rossi@example.com",
+    "resolution": "Explained retry payment option within 48 hours and that the bank holds the decline reason (KB-003).",
+    "kb_refs": [
+      "KB-003"
+    ]
+  },
+  {
+    "id": "T-0008",
+    "subject": "Need an invoice",
+    "body": "Can I get an invoice for order ORD-10143 for my company?",
+    "category": "billing",
+    "priority": "P4",
+    "customer_email": "wael.ibrahim@example.net",
+    "resolution": "Pointed to Orders > Download invoice. Explained invoices cannot be reissued with new company details (KB-004).",
+    "kb_refs": [
+      "KB-004"
+    ]
+  },
+  {
+    "id": "T-0009",
+    "subject": "What does Lumora Plus include?",
+    "body": "Thinking of upgrading. What do I get with Plus?",
+    "category": "billing",
+    "priority": "P4",
+    "customer_email": "bilal.silva@example.org",
+    "resolution": "Explained Plus benefits and price (KB-005).",
+    "kb_refs": [
+      "KB-005"
+    ]
+  },
+  {
+    "id": "T-0010",
+    "subject": "Return the Nimbus Mesh Router 3-Pack",
+    "body": "I don't need the Nimbus Mesh Router 3-Pack from ORD-10091 anymore. How do I return it?",
+    "category": "refund",
+    "priority": "P3",
+    "customer_email": "hana.garcia@example.com",
+    "resolution": "Order was within 30 days. Explained return process and $6.95 label fee for change-of-mind returns (KB-006, KB-008).",
+    "kb_refs": [
+      "KB-006",
+      "KB-008"
+    ]
+  },
+  {
+    "id": "T-0011",
+    "subject": "Refund for open box item",
+    "body": "I want to return the open-box earbuds from ORD-10095.",
+    "category": "refund",
+    "priority": "P3",
+    "customer_email": "james.porter@example.com",
+    "resolution": "Declined politely: final sale items are not returnable (KB-007).",
+    "kb_refs": [
+      "KB-007"
+    ]
+  },
+  {
+    "id": "T-0012",
+    "subject": "Cancel order ORD-10126",
+    "body": "Please cancel order ORD-10126, I ordered by mistake.",
+    "category": "refund",
+    "priority": "P3",
+    "customer_email": "ava.weber@example.org",
+    "resolution": "Order was still processing; cancelled with full refund (KB-009).",
+    "kb_refs": [
+      "KB-009"
+    ]
+  },
+  {
+    "id": "T-0013",
+    "subject": "Item arrived broken",
+    "body": "The Aero Max Headphones from ORD-10049 arrived with a cracked case.",
+    "category": "refund",
+    "priority": "P3",
+    "customer_email": "isla.darwish@example.net",
+    "resolution": "Customer sent photos. Free replacement shipped, no return fee (KB-010).",
+    "kb_refs": [
+      "KB-010"
+    ]
+  },
+  {
+    "id": "T-0014",
+    "subject": "When will I get my refund?",
+    "body": "I returned ORD-10044 a week ago. Where's my refund?",
+    "category": "refund",
+    "priority": "P3",
+    "customer_email": "julia.darwish@example.net",
+    "resolution": "Warehouse received the item 3 days ago; explained 5-10 business day processing (KB-008).",
+    "kb_refs": [
+      "KB-008"
+    ]
+  },
+  {
+    "id": "T-0015",
+    "subject": "Refund my membership",
+    "body": "My Plus membership renewed and I don't want it.",
+    "category": "refund",
+    "priority": "P3",
+    "customer_email": "maya.chen@example.com",
+    "resolution": "Renewal was within 14 days, so the fee was refunded in full (KB-011).",
+    "kb_refs": [
+      "KB-011"
+    ]
+  },
+  {
+    "id": "T-0016",
+    "subject": "Earbuds won't pair",
+    "body": "My Pulse Smartwatch won't connect to my phone.",
+    "category": "technical",
+    "priority": "P3",
+    "customer_email": "ivy.tanaka@example.com",
+    "resolution": "Walked customer through the reset-and-pair steps in KB-018. Resolved.",
+    "kb_refs": [
+      "KB-018"
+    ]
+  },
+  {
+    "id": "T-0017",
+    "subject": "Watch not syncing",
+    "body": "My Pulse watch stopped syncing steps to the app.",
+    "category": "technical",
+    "priority": "P3",
+    "customer_email": "maya.chen@example.com",
+    "resolution": "Resync and restart steps from KB-019 fixed the issue.",
+    "kb_refs": [
+      "KB-019"
+    ]
+  },
+  {
+    "id": "T-0018",
+    "subject": "Router setup help",
+    "body": "How do I add the satellites for my Nimbus 3-pack?",
+    "category": "technical",
+    "priority": "P4",
+    "customer_email": "karim.tanaka@example.org",
+    "resolution": "Shared satellite setup steps from KB-020.",
+    "kb_refs": [
+      "KB-020"
+    ]
+  },
+  {
+    "id": "T-0019",
+    "subject": "Camera keeps going offline",
+    "body": "My Sentinel camera shows offline every evening.",
+    "category": "technical",
+    "priority": "P3",
+    "customer_email": "rami.sabbagh@example.org",
+    "resolution": "Customer's camera was on 5 GHz; moved it to 2.4 GHz per KB-021. Resolved.",
+    "kb_refs": [
+      "KB-021"
+    ]
+  },
+  {
+    "id": "T-0020",
+    "subject": "Power bank got very hot",
+    "body": "My power bank got extremely hot while charging and smelled like burning.",
+    "category": "technical",
+    "priority": "P1",
+    "customer_email": "adam.darwish@example.net",
+    "resolution": "Escalated to safety specialist. Customer told to stop using and unplug (KB-023). Free replacement sent.",
+    "kb_refs": [
+      "KB-023"
+    ]
+  },
+  {
+    "id": "T-0021",
+    "subject": "Is this covered by warranty?",
+    "body": "My Nimbus Mesh Router stopped working after 8 months.",
+    "category": "technical",
+    "priority": "P3",
+    "customer_email": "hana.garcia@example.com",
+    "resolution": "Within 1-year warranty (KB-024); replacement issued.",
+    "kb_refs": [
+      "KB-024"
+    ]
+  },
+  {
+    "id": "T-0022",
+    "subject": "Password reset not working",
+    "body": "The reset link says it's expired.",
+    "category": "account",
+    "priority": "P3",
+    "customer_email": "nour.saleh@example.com",
+    "resolution": "Explained links expire after 1 hour and newer requests invalidate older ones (KB-025). Customer reset successfully.",
+    "kb_refs": [
+      "KB-025"
+    ]
+  },
+  {
+    "id": "T-0023",
+    "subject": "Account locked",
+    "body": "I'm locked out after trying my password a few times.",
+    "category": "account",
+    "priority": "P3",
+    "customer_email": "eva.rossi@example.com",
+    "resolution": "Explained the 30-minute automatic unlock (KB-026).",
+    "kb_refs": [
+      "KB-026"
+    ]
+  },
+  {
+    "id": "T-0024",
+    "subject": "Lost my 2FA phone",
+    "body": "I got a new phone and can't sign in because of 2FA.",
+    "category": "account",
+    "priority": "P2",
+    "customer_email": "bilal.silva@example.org",
+    "resolution": "No backup codes; identity verified by specialist and 2FA removed (KB-026).",
+    "kb_refs": [
+      "KB-026"
+    ]
+  },
+  {
+    "id": "T-0025",
+    "subject": "Delete my account",
+    "body": "Please delete my account and data.",
+    "category": "account",
+    "priority": "P4",
+    "customer_email": "wael.darwish@example.net",
+    "resolution": "Pointed to Account > Privacy > Delete account and the 30-day timeline (KB-028).",
+    "kb_refs": [
+      "KB-028"
+    ]
+  },
+  {
+    "id": "T-0026",
+    "subject": "Price dropped after I bought",
+    "body": "The Sentinel Indoor Camera is cheaper now than when I bought it on ORD-10098.",
+    "category": "other",
+    "priority": "P4",
+    "customer_email": "wael.silva@example.com",
+    "resolution": "Price dropped within 14 days; refunded the difference (KB-030).",
+    "kb_refs": [
+      "KB-030"
+    ]
+  },
+  {
+    "id": "T-0027",
+    "subject": "Support hours?",
+    "body": "What are your support hours?",
+    "category": "other",
+    "priority": "P4",
+    "customer_email": "grace.haddad@example.net",
+    "resolution": "Shared support hours (KB-029).",
+    "kb_refs": [
+      "KB-029"
+    ]
+  },
+  {
+    "id": "T-0028",
+    "subject": "Where is my order ORD-10126?",
+    "body": "Hi, I ordered the Halo Smart Desk Lamp last week and haven't received it. Can you check?",
+    "category": "shipping",
+    "priority": "P3",
+    "customer_email": "ava.weber@example.org",
+    "resolution": "Shared tracking link and ETA from the order record. Explained standard shipping takes 3-7 business days (KB-012, KB-013).",
+    "kb_refs": [
+      "KB-012",
+      "KB-013"
+    ]
+  },
+  {
+    "id": "T-0029",
+    "subject": "Order ORD-10073 is late",
+    "body": "My Volt 20K Power Bank was supposed to arrive days ago. Tracking hasn't moved.",
+    "category": "shipping",
+    "priority": "P3",
+    "customer_email": "bilal.silva@example.org",
+    "resolution": "Order was 6 business days past ETA, so a carrier trace was opened per KB-014. Customer updated with the trace timeline.",
+    "kb_refs": [
+      "KB-014"
+    ]
+  },
+  {
+    "id": "T-0030",
+    "subject": "Package lost",
+    "body": "Tracking for ORD-10106 says the package is lost. What now?",
+    "category": "shipping",
+    "priority": "P2",
+    "customer_email": "ivy.tanaka@example.com",
+    "resolution": "Carrier confirmed loss. Offered reshipment or refund per KB-015; customer chose reshipment.",
+    "kb_refs": [
+      "KB-015"
+    ]
+  },
+  {
+    "id": "T-0031",
+    "subject": "Change delivery address",
+    "body": "Can I change the address on order ORD-10106? I'm moving.",
+    "category": "shipping",
+    "priority": "P3",
+    "customer_email": "ivy.tanaka@example.com",
+    "resolution": "Order was still processing, so the address was updated (KB-016).",
+    "kb_refs": [
+      "KB-016"
+    ]
+  },
+  {
+    "id": "T-0032",
+    "subject": "Do you ship to Canada?",
+    "body": "Hi Hassan here, do you deliver internationally and who pays customs?",
+    "category": "shipping",
+    "priority": "P4",
+    "customer_email": "hassan.aziz@example.com",
+    "resolution": "Explained international shipping times and that duties are paid by the recipient (KB-017).",
+    "kb_refs": [
+      "KB-017"
+    ]
+  },
+  {
+    "id": "T-0033",
+    "subject": "Charged twice for ORD-10059",
+    "body": "I see two charges on my card for the same order ORD-10059.",
+    "category": "billing",
+    "priority": "P2",
+    "customer_email": "isla.darwish@example.net",
+    "resolution": "One charge was a pending authorization that drops off in 3-5 business days (KB-002). Customer informed.",
+    "kb_refs": [
+      "KB-002"
+    ]
+  },
+  {
+    "id": "T-0034",
+    "subject": "Payment declined",
+    "body": "My card was declined on order ORD-10004 but the card works elsewhere.",
+    "category": "billing",
+    "priority": "P3",
+    "customer_email": "maya.chen@example.com",
+    "resolution": "Explained retry payment option within 48 hours and that the bank holds the decline reason (KB-003).",
+    "kb_refs": [
+      "KB-003"
+    ]
+  },
+  {
+    "id": "T-0035",
+    "subject": "Need an invoice",
+    "body": "Can I get an invoice for order ORD-10012 for my company?",
+    "category": "billing",
+    "priority": "P4",
+    "customer_email": "daniel.okafor@example.com",
+    "resolution": "Pointed to Orders > Download invoice. Explained invoices cannot be reissued with new company details (KB-004).",
+    "kb_refs": [
+      "KB-004"
+    ]
+  },
+  {
+    "id": "T-0036",
+    "subject": "What does Lumora Plus include?",
+    "body": "Thinking of upgrading. What do I get with Plus?",
+    "category": "billing",
+    "priority": "P4",
+    "customer_email": "wael.darwish@example.net",
+    "resolution": "Explained Plus benefits and price (KB-005).",
+    "kb_refs": [
+      "KB-005"
+    ]
+  },
+  {
+    "id": "T-0037",
+    "subject": "Return the Aero Earbuds (Open Box, Final Sale)",
+    "body": "I don't need the Aero Earbuds (Open Box, Final Sale) from ORD-10122 anymore. How do I return it?",
+    "category": "refund",
+    "priority": "P3",
+    "customer_email": "hassan.aziz@example.com",
+    "resolution": "Order was within 30 days. Explained return process and $6.95 label fee for change-of-mind returns (KB-006, KB-008).",
+    "kb_refs": [
+      "KB-006",
+      "KB-008"
+    ]
+  },
+  {
+    "id": "T-0038",
+    "subject": "Refund for open box item",
+    "body": "I want to return the open-box earbuds from ORD-10025.",
+    "category": "refund",
+    "priority": "P3",
+    "customer_email": "alice.nasser@example.com",
+    "resolution": "Declined politely: final sale items are not returnable (KB-007).",
+    "kb_refs": [
+      "KB-007"
+    ]
+  },
+  {
+    "id": "T-0039",
+    "subject": "Cancel order ORD-10127",
+    "body": "Please cancel order ORD-10127, I ordered by mistake.",
+    "category": "refund",
+    "priority": "P3",
+    "customer_email": "ali.mansour@example.net",
+    "resolution": "Order was still processing; cancelled with full refund (KB-009).",
+    "kb_refs": [
+      "KB-009"
+    ]
+  },
+  {
+    "id": "T-0040",
+    "subject": "Item arrived broken",
+    "body": "The Halo Smart Desk Lamp from ORD-10032 arrived with a cracked case.",
+    "category": "refund",
+    "priority": "P3",
+    "customer_email": "hassan.haddad@example.com",
+    "resolution": "Customer sent photos. Free replacement shipped, no return fee (KB-010).",
+    "kb_refs": [
+      "KB-010"
+    ]
+  },
+  {
+    "id": "T-0041",
+    "subject": "When will I get my refund?",
+    "body": "I returned ORD-10068 a week ago. Where's my refund?",
+    "category": "refund",
+    "priority": "P3",
+    "customer_email": "mia.darwish@example.com",
+    "resolution": "Warehouse received the item 3 days ago; explained 5-10 business day processing (KB-008).",
+    "kb_refs": [
+      "KB-008"
+    ]
+  },
+  {
+    "id": "T-0042",
+    "subject": "Refund my membership",
+    "body": "My Plus membership renewed and I don't want it.",
+    "category": "refund",
+    "priority": "P3",
+    "customer_email": "hassan.haddad@example.com",
+    "resolution": "Renewal was within 14 days, so the fee was refunded in full (KB-011).",
+    "kb_refs": [
+      "KB-011"
+    ]
+  },
+  {
+    "id": "T-0043",
+    "subject": "Earbuds won't pair",
+    "body": "My Volt 20K Power Bank won't connect to my phone.",
+    "category": "technical",
+    "priority": "P3",
+    "customer_email": "bilal.silva@example.org",
+    "resolution": "Walked customer through the reset-and-pair steps in KB-018. Resolved.",
+    "kb_refs": [
+      "KB-018"
+    ]
+  },
+  {
+    "id": "T-0044",
+    "subject": "Watch not syncing",
+    "body": "My Pulse watch stopped syncing steps to the app.",
+    "category": "technical",
+    "priority": "P3",
+    "customer_email": "lea.tanaka@example.net",
+    "resolution": "Resync and restart steps from KB-019 fixed the issue.",
+    "kb_refs": [
+      "KB-019"
+    ]
+  },
+  {
+    "id": "T-0045",
+    "subject": "Router setup help",
+    "body": "How do I add the satellites for my Nimbus 3-pack?",
+    "category": "technical",
+    "priority": "P4",
+    "customer_email": "samir.hamdan@example.org",
+    "resolution": "Shared satellite setup steps from KB-020.",
+    "kb_refs": [
+      "KB-020"
+    ]
+  },
+  {
+    "id": "T-0046",
+    "subject": "Camera keeps going offline",
+    "body": "My Sentinel camera shows offline every evening.",
+    "category": "technical",
+    "priority": "P3",
+    "customer_email": "hadi.haddad@example.com",
+    "resolution": "Customer's camera was on 5 GHz; moved it to 2.4 GHz per KB-021. Resolved.",
+    "kb_refs": [
+      "KB-021"
+    ]
+  },
+  {
+    "id": "T-0047",
+    "subject": "Power bank got very hot",
+    "body": "My power bank got extremely hot while charging and smelled like burning.",
+    "category": "technical",
+    "priority": "P1",
+    "customer_email": "hassan.jaber@example.net",
+    "resolution": "Escalated to safety specialist. Customer told to stop using and unplug (KB-023). Free replacement sent.",
+    "kb_refs": [
+      "KB-023"
+    ]
+  },
+  {
+    "id": "T-0048",
+    "subject": "Is this covered by warranty?",
+    "body": "My Pulse Smartwatch Band stopped working after 8 months.",
+    "category": "technical",
+    "priority": "P3",
+    "customer_email": "hassan.haddad@example.com",
+    "resolution": "Within 1-year warranty (KB-024); replacement issued.",
+    "kb_refs": [
+      "KB-024"
+    ]
+  },
+  {
+    "id": "T-0049",
+    "subject": "Password reset not working",
+    "body": "The reset link says it's expired.",
+    "category": "account",
+    "priority": "P3",
+    "customer_email": "wael.silva@example.com",
+    "resolution": "Explained links expire after 1 hour and newer requests invalidate older ones (KB-025). Customer reset successfully.",
+    "kb_refs": [
+      "KB-025"
+    ]
+  },
+  {
+    "id": "T-0050",
+    "subject": "Account locked",
+    "body": "I'm locked out after trying my password a few times.",
+    "category": "account",
+    "priority": "P3",
+    "customer_email": "samir.hamdan@example.org",
+    "resolution": "Explained the 30-minute automatic unlock (KB-026).",
+    "kb_refs": [
+      "KB-026"
+    ]
+  },
+  {
+    "id": "T-0051",
+    "subject": "Lost my 2FA phone",
+    "body": "I got a new phone and can't sign in because of 2FA.",
+    "category": "account",
+    "priority": "P2",
+    "customer_email": "ethan.brooks@example.com",
+    "resolution": "No backup codes; identity verified by specialist and 2FA removed (KB-026).",
+    "kb_refs": [
+      "KB-026"
+    ]
+  },
+  {
+    "id": "T-0052",
+    "subject": "Delete my account",
+    "body": "Please delete my account and data.",
+    "category": "account",
+    "priority": "P4",
+    "customer_email": "hadi.haddad@example.com",
+    "resolution": "Pointed to Account > Privacy > Delete account and the 30-day timeline (KB-028).",
+    "kb_refs": [
+      "KB-028"
+    ]
+  },
+  {
+    "id": "T-0053",
+    "subject": "Price dropped after I bought",
+    "body": "The Pulse Smartwatch is cheaper now than when I bought it on ORD-10116.",
+    "category": "other",
+    "priority": "P4",
+    "customer_email": "wael.darwish@example.net",
+    "resolution": "Price dropped within 14 days; refunded the difference (KB-030).",
+    "kb_refs": [
+      "KB-030"
+    ]
+  },
+  {
+    "id": "T-0054",
+    "subject": "Support hours?",
+    "body": "What are your support hours?",
+    "category": "other",
+    "priority": "P4",
+    "customer_email": "wael.ibrahim@example.net",
+    "resolution": "Shared support hours (KB-029).",
+    "kb_refs": [
+      "KB-029"
+    ]
+  },
+  {
+    "id": "T-0055",
+    "subject": "Where is my order ORD-10078?",
+    "body": "Hi, I ordered the Volt GaN Charger 65W last week and haven't received it. Can you check?",
+    "category": "shipping",
+    "priority": "P3",
+    "customer_email": "samir.darwish@example.net",
+    "resolution": "Shared tracking link and ETA from the order record. Explained standard shipping takes 3-7 business days (KB-012, KB-013).",
+    "kb_refs": [
+      "KB-012",
+      "KB-013"
+    ]
+  },
+  {
+    "id": "T-0056",
+    "subject": "Order ORD-10102 is late",
+    "body": "My Nimbus Mesh Router was supposed to arrive days ago. Tracking hasn't moved.",
+    "category": "shipping",
+    "priority": "P3",
+    "customer_email": "ali.khoury@example.net",
+    "resolution": "Order was 6 business days past ETA, so a carrier trace was opened per KB-014. Customer updated with the trace timeline.",
+    "kb_refs": [
+      "KB-014"
+    ]
+  },
+  {
+    "id": "T-0057",
+    "subject": "Package lost",
+    "body": "Tracking for ORD-10009 says the package is lost. What now?",
+    "category": "shipping",
+    "priority": "P2",
+    "customer_email": "omar.khalil@example.com",
+    "resolution": "Carrier confirmed loss. Offered reshipment or refund per KB-015; customer chose reshipment.",
+    "kb_refs": [
+      "KB-015"
+    ]
+  },
+  {
+    "id": "T-0058",
+    "subject": "Change delivery address",
+    "body": "Can I change the address on order ORD-10080? I'm moving.",
+    "category": "shipping",
+    "priority": "P3",
+    "customer_email": "karim.tanaka@example.org",
+    "resolution": "Order was still processing, so the address was updated (KB-016).",
+    "kb_refs": [
+      "KB-016"
+    ]
+  },
+  {
+    "id": "T-0059",
+    "subject": "Do you ship to Canada?",
+    "body": "Hi Grace here, do you deliver internationally and who pays customs?",
+    "category": "shipping",
+    "priority": "P4",
+    "customer_email": "grace.haddad@example.net",
+    "resolution": "Explained international shipping times and that duties are paid by the recipient (KB-017).",
+    "kb_refs": [
+      "KB-017"
+    ]
+  },
+  {
+    "id": "T-0060",
+    "subject": "Charged twice for ORD-10030",
+    "body": "I see two charges on my card for the same order ORD-10030.",
+    "category": "billing",
+    "priority": "P2",
+    "customer_email": "sara.haddad@example.com",
+    "resolution": "One charge was a pending authorization that drops off in 3-5 business days (KB-002). Customer informed.",
+    "kb_refs": [
+      "KB-002"
+    ]
+  },
+  {
+    "id": "T-0061",
+    "subject": "Payment declined",
+    "body": "My card was declined on order ORD-10062 but the card works elsewhere.",
+    "category": "billing",
+    "priority": "P3",
+    "customer_email": "lucas.moreau@example.com",
+    "resolution": "Explained retry payment option within 48 hours and that the bank holds the decline reason (KB-003).",
+    "kb_refs": [
+      "KB-003"
+    ]
+  },
+  {
+    "id": "T-0062",
+    "subject": "Need an invoice",
+    "body": "Can I get an invoice for order ORD-10034 for my company?",
+    "category": "billing",
+    "priority": "P4",
+    "customer_email": "hassan.haddad@example.com",
+    "resolution": "Pointed to Orders > Download invoice. Explained invoices cannot be reissued with new company details (KB-004).",
+    "kb_refs": [
+      "KB-004"
+    ]
+  },
+  {
+    "id": "T-0063",
+    "subject": "What does Lumora Plus include?",
+    "body": "Thinking of upgrading. What do I get with Plus?",
+    "category": "billing",
+    "priority": "P4",
+    "customer_email": "maya.chen@example.com",
+    "resolution": "Explained Plus benefits and price (KB-005).",
+    "kb_refs": [
+      "KB-005"
+    ]
+  },
+  {
+    "id": "T-0064",
+    "subject": "Return the Aero Max Headphones",
+    "body": "I don't need the Aero Max Headphones from ORD-10027 anymore. How do I return it?",
+    "category": "refund",
+    "priority": "P3",
+    "customer_email": "yusuf.aziz@example.com",
+    "resolution": "Order was within 30 days. Explained return process and $6.95 label fee for change-of-mind returns (KB-006, KB-008).",
+    "kb_refs": [
+      "KB-006",
+      "KB-008"
+    ]
+  },
+  {
+    "id": "T-0065",
+    "subject": "Refund for open box item",
+    "body": "I want to return the open-box earbuds from ORD-10070.",
+    "category": "refund",
+    "priority": "P3",
+    "customer_email": "daniel.okafor@example.com",
+    "resolution": "Declined politely: final sale items are not returnable (KB-007).",
+    "kb_refs": [
+      "KB-007"
+    ]
+  },
+  {
+    "id": "T-0066",
+    "subject": "Cancel order ORD-10131",
+    "body": "Please cancel order ORD-10131, I ordered by mistake.",
+    "category": "refund",
+    "priority": "P3",
+    "customer_email": "rami.sabbagh@example.org",
+    "resolution": "Order was still processing; cancelled with full refund (KB-009).",
+    "kb_refs": [
+      "KB-009"
+    ]
+  },
+  {
+    "id": "T-0067",
+    "subject": "Item arrived broken",
+    "body": "The Nimbus Mesh Router 3-Pack from ORD-10113 arrived with a cracked case.",
+    "category": "refund",
+    "priority": "P3",
+    "customer_email": "hana.garcia@example.com",
+    "resolution": "Customer sent photos. Free replacement shipped, no return fee (KB-010).",
+    "kb_refs": [
+      "KB-010"
+    ]
+  },
+  {
+    "id": "T-0068",
+    "subject": "When will I get my refund?",
+    "body": "I returned ORD-10040 a week ago. Where's my refund?",
+    "category": "refund",
+    "priority": "P3",
+    "customer_email": "zoe.nasser@example.net",
+    "resolution": "Warehouse received the item 3 days ago; explained 5-10 business day processing (KB-008).",
+    "kb_refs": [
+      "KB-008"
+    ]
+  },
+  {
+    "id": "T-0069",
+    "subject": "Refund my membership",
+    "body": "My Plus membership renewed and I don't want it.",
+    "category": "refund",
+    "priority": "P3",
+    "customer_email": "noah.rossi@example.org",
+    "resolution": "Renewal was within 14 days, so the fee was refunded in full (KB-011).",
+    "kb_refs": [
+      "KB-011"
+    ]
+  },
+  {
+    "id": "T-0070",
+    "subject": "Earbuds won't pair",
+    "body": "My Pulse Smartwatch won't connect to my phone.",
+    "category": "technical",
+    "priority": "P3",
+    "customer_email": "ivy.tanaka@example.com",
+    "resolution": "Walked customer through the reset-and-pair steps in KB-018. Resolved.",
+    "kb_refs": [
+      "KB-018"
+    ]
+  },
+  {
+    "id": "T-0071",
+    "subject": "Watch not syncing",
+    "body": "My Pulse watch stopped syncing steps to the app.",
+    "category": "technical",
+    "priority": "P3",
+    "customer_email": "james.porter@example.com",
+    "resolution": "Resync and restart steps from KB-019 fixed the issue.",
+    "kb_refs": [
+      "KB-019"
+    ]
+  },
+  {
+    "id": "T-0072",
+    "subject": "Router setup help",
+    "body": "How do I add the satellites for my Nimbus 3-pack?",
+    "category": "technical",
+    "priority": "P4",
+    "customer_email": "zoe.nasser@example.net",
+    "resolution": "Shared satellite setup steps from KB-020.",
+    "kb_refs": [
+      "KB-020"
+    ]
+  },
+  {
+    "id": "T-0073",
+    "subject": "Camera keeps going offline",
+    "body": "My Sentinel camera shows offline every evening.",
+    "category": "technical",
+    "priority": "P3",
+    "customer_email": "isla.darwish@example.net",
+    "resolution": "Customer's camera was on 5 GHz; moved it to 2.4 GHz per KB-021. Resolved.",
+    "kb_refs": [
+      "KB-021"
+    ]
+  },
+  {
+    "id": "T-0074",
+    "subject": "Power bank got very hot",
+    "body": "My power bank got extremely hot while charging and smelled like burning.",
+    "category": "technical",
+    "priority": "P1",
+    "customer_email": "karim.tanaka@example.org",
+    "resolution": "Escalated to safety specialist. Customer told to stop using and unplug (KB-023). Free replacement sent.",
+    "kb_refs": [
+      "KB-023"
+    ]
+  },
+  {
+    "id": "T-0075",
+    "subject": "Is this covered by warranty?",
+    "body": "My Pulse Smartwatch Band stopped working after 8 months.",
+    "category": "technical",
+    "priority": "P3",
+    "customer_email": "hassan.haddad@example.com",
+    "resolution": "Within 1-year warranty (KB-024); replacement issued.",
+    "kb_refs": [
+      "KB-024"
+    ]
+  },
+  {
+    "id": "T-0076",
+    "subject": "Password reset not working",
+    "body": "The reset link says it's expired.",
+    "category": "account",
+    "priority": "P3",
+    "customer_email": "julia.darwish@example.net",
+    "resolution": "Explained links expire after 1 hour and newer requests invalidate older ones (KB-025). Customer reset successfully.",
+    "kb_refs": [
+      "KB-025"
+    ]
+  },
+  {
+    "id": "T-0077",
+    "subject": "Account locked",
+    "body": "I'm locked out after trying my password a few times.",
+    "category": "account",
+    "priority": "P3",
+    "customer_email": "mia.darwish@example.com",
+    "resolution": "Explained the 30-minute automatic unlock (KB-026).",
+    "kb_refs": [
+      "KB-026"
+    ]
+  },
+  {
+    "id": "T-0078",
+    "subject": "Lost my 2FA phone",
+    "body": "I got a new phone and can't sign in because of 2FA.",
+    "category": "account",
+    "priority": "P2",
+    "customer_email": "hassan.jaber@example.net",
+    "resolution": "No backup codes; identity verified by specialist and 2FA removed (KB-026).",
+    "kb_refs": [
+      "KB-026"
+    ]
+  },
+  {
+    "id": "T-0079",
+    "subject": "Delete my account",
+    "body": "Please delete my account and data.",
+    "category": "account",
+    "priority": "P4",
+    "customer_email": "samir.hamdan@example.org",
+    "resolution": "Pointed to Account > Privacy > Delete account and the 30-day timeline (KB-028).",
+    "kb_refs": [
+      "KB-028"
+    ]
+  },
+  {
+    "id": "T-0080",
+    "subject": "Price dropped after I bought",
+    "body": "The Sentinel Indoor Camera is cheaper now than when I bought it on ORD-10015.",
+    "category": "other",
+    "priority": "P4",
+    "customer_email": "ethan.brooks@example.com",
+    "resolution": "Price dropped within 14 days; refunded the difference (KB-030).",
+    "kb_refs": [
+      "KB-030"
+    ]
+  },
+  {
+    "id": "T-0081",
+    "subject": "Support hours?",
+    "body": "What are your support hours?",
+    "category": "other",
+    "priority": "P4",
+    "customer_email": "isla.darwish@example.net",
+    "resolution": "Shared support hours (KB-029).",
+    "kb_refs": [
+      "KB-029"
+    ]
+  },
+  {
+    "id": "T-0082",
+    "subject": "Where is my order ORD-10127?",
+    "body": "Hi, I ordered the Nimbus Mesh Router last week and haven't received it. Can you check?",
+    "category": "shipping",
+    "priority": "P3",
+    "customer_email": "ali.mansour@example.net",
+    "resolution": "Shared tracking link and ETA from the order record. Explained standard shipping takes 3-7 business days (KB-012, KB-013).",
+    "kb_refs": [
+      "KB-012",
+      "KB-013"
+    ]
+  },
+  {
+    "id": "T-0083",
+    "subject": "Order ORD-10108 is late",
+    "body": "My Aero Wireless Earbuds was supposed to arrive days ago. Tracking hasn't moved.",
+    "category": "shipping",
+    "priority": "P3",
+    "customer_email": "adam.darwish@example.net",
+    "resolution": "Order was 6 business days past ETA, so a carrier trace was opened per KB-014. Customer updated with the trace timeline.",
+    "kb_refs": [
+      "KB-014"
+    ]
+  },
+  {
+    "id": "T-0084",
+    "subject": "Package lost",
+    "body": "Tracking for ORD-10010 says the package is lost. What now?",
+    "category": "shipping",
+    "priority": "P2",
+    "customer_email": "lina.farah@example.com",
+    "resolution": "Carrier confirmed loss. Offered reshipment or refund per KB-015; customer chose reshipment.",
+    "kb_refs": [
+      "KB-015"
+    ]
+  },
+  {
+    "id": "T-0085",
+    "subject": "Change delivery address",
+    "body": "Can I change the address on order ORD-10135? I'm moving.",
+    "category": "shipping",
+    "priority": "P3",
+    "customer_email": "ava.weber@example.org",
+    "resolution": "Order was still processing, so the address was updated (KB-016).",
+    "kb_refs": [
+      "KB-016"
+    ]
+  },
+  {
+    "id": "T-0086",
+    "subject": "Do you ship to Canada?",
+    "body": "Hi James here, do you deliver internationally and who pays customs?",
+    "category": "shipping",
+    "priority": "P4",
+    "customer_email": "james.porter@example.com",
+    "resolution": "Explained international shipping times and that duties are paid by the recipient (KB-017).",
+    "kb_refs": [
+      "KB-017"
+    ]
+  },
+  {
+    "id": "T-0087",
+    "subject": "Charged twice for ORD-10148",
+    "body": "I see two charges on my card for the same order ORD-10148.",
+    "category": "billing",
+    "priority": "P2",
+    "customer_email": "hassan.jaber@example.net",
+    "resolution": "One charge was a pending authorization that drops off in 3-5 business days (KB-002). Customer informed.",
+    "kb_refs": [
+      "KB-002"
+    ]
+  },
+  {
+    "id": "T-0088",
+    "subject": "Payment declined",
+    "body": "My card was declined on order ORD-10148 but the card works elsewhere.",
+    "category": "billing",
+    "priority": "P3",
+    "customer_email": "hassan.jaber@example.net",
+    "resolution": "Explained retry payment option within 48 hours and that the bank holds the decline reason (KB-003).",
+    "kb_refs": [
+      "KB-003"
+    ]
+  },
+  {
+    "id": "T-0089",
+    "subject": "Need an invoice",
+    "body": "Can I get an invoice for order ORD-10128 for my company?",
+    "category": "billing",
+    "priority": "P4",
+    "customer_email": "mia.ibrahim@example.org",
+    "resolution": "Pointed to Orders > Download invoice. Explained invoices cannot be reissued with new company details (KB-004).",
+    "kb_refs": [
+      "KB-004"
+    ]
+  },
+  {
+    "id": "T-0090",
+    "subject": "What does Lumora Plus include?",
+    "body": "Thinking of upgrading. What do I get with Plus?",
+    "category": "billing",
+    "priority": "P4",
+    "customer_email": "ivy.tanaka@example.com",
+    "resolution": "Explained Plus benefits and price (KB-005).",
+    "kb_refs": [
+      "KB-005"
+    ]
+  },
+  {
+    "id": "T-0091",
+    "subject": "Return the Volt 20K Power Bank",
+    "body": "I don't need the Volt 20K Power Bank from ORD-10089 anymore. How do I return it?",
+    "category": "refund",
+    "priority": "P3",
+    "customer_email": "sara.haddad@example.com",
+    "resolution": "Order was within 30 days. Explained return process and $6.95 label fee for change-of-mind returns (KB-006, KB-008).",
+    "kb_refs": [
+      "KB-006",
+      "KB-008"
+    ]
+  },
+  {
+    "id": "T-0092",
+    "subject": "Refund for open box item",
+    "body": "I want to return the open-box earbuds from ORD-10052.",
+    "category": "refund",
+    "priority": "P3",
+    "customer_email": "wael.darwish@example.net",
+    "resolution": "Declined politely: final sale items are not returnable (KB-007).",
+    "kb_refs": [
+      "KB-007"
+    ]
+  },
+  {
+    "id": "T-0093",
+    "subject": "Cancel order ORD-10050",
+    "body": "Please cancel order ORD-10050, I ordered by mistake.",
+    "category": "refund",
+    "priority": "P3",
+    "customer_email": "rania.aziz@example.com",
+    "resolution": "Order was still processing; cancelled with full refund (KB-009).",
+    "kb_refs": [
+      "KB-009"
+    ]
+  },
+  {
+    "id": "T-0094",
+    "subject": "Item arrived broken",
+    "body": "The Aero Earbuds (Open Box, Final Sale) from ORD-10103 arrived with a cracked case.",
+    "category": "refund",
+    "priority": "P3",
+    "customer_email": "samir.dubois@example.net",
+    "resolution": "Customer sent photos. Free replacement shipped, no return fee (KB-010).",
+    "kb_refs": [
+      "KB-010"
+    ]
+  },
+  {
+    "id": "T-0095",
+    "subject": "When will I get my refund?",
+    "body": "I returned ORD-10104 a week ago. Where's my refund?",
+    "category": "refund",
+    "priority": "P3",
+    "customer_email": "lily.garcia@example.org",
+    "resolution": "Warehouse received the item 3 days ago; explained 5-10 business day processing (KB-008).",
+    "kb_refs": [
+      "KB-008"
+    ]
+  },
+  {
+    "id": "T-0096",
+    "subject": "Refund my membership",
+    "body": "My Plus membership renewed and I don't want it.",
+    "category": "refund",
+    "priority": "P3",
+    "customer_email": "maya.chen@example.com",
+    "resolution": "Renewal was within 14 days, so the fee was refunded in full (KB-011).",
+    "kb_refs": [
+      "KB-011"
+    ]
+  },
+  {
+    "id": "T-0097",
+    "subject": "Earbuds won't pair",
+    "body": "My Volt 20K Power Bank won't connect to my phone.",
+    "category": "technical",
+    "priority": "P3",
+    "customer_email": "lina.farah@example.com",
+    "resolution": "Walked customer through the reset-and-pair steps in KB-018. Resolved.",
+    "kb_refs": [
+      "KB-018"
+    ]
+  },
+  {
+    "id": "T-0098",
+    "subject": "Watch not syncing",
+    "body": "My Pulse watch stopped syncing steps to the app.",
+    "category": "technical",
+    "priority": "P3",
+    "customer_email": "omar.khalil@example.com",
+    "resolution": "Resync and restart steps from KB-019 fixed the issue.",
+    "kb_refs": [
+      "KB-019"
+    ]
+  },
+  {
+    "id": "T-0099",
+    "subject": "Router setup help",
+    "body": "How do I add the satellites for my Nimbus 3-pack?",
+    "category": "technical",
+    "priority": "P4",
+    "customer_email": "maya.chen@example.com",
+    "resolution": "Shared satellite setup steps from KB-020.",
+    "kb_refs": [
+      "KB-020"
+    ]
+  },
+  {
+    "id": "T-0100",
+    "subject": "Camera keeps going offline",
+    "body": "My Sentinel camera shows offline every evening.",
+    "category": "technical",
+    "priority": "P3",
+    "customer_email": "ivy.tanaka@example.com",
+    "resolution": "Customer's camera was on 5 GHz; moved it to 2.4 GHz per KB-021. Resolved.",
+    "kb_refs": [
+      "KB-021"
+    ]
+  },
+  {
+    "id": "T-0101",
+    "subject": "Power bank got very hot",
+    "body": "My power bank got extremely hot while charging and smelled like burning.",
+    "category": "technical",
+    "priority": "P1",
+    "customer_email": "hadi.haddad@example.com",
+    "resolution": "Escalated to safety specialist. Customer told to stop using and unplug (KB-023). Free replacement sent.",
+    "kb_refs": [
+      "KB-023"
+    ]
+  },
+  {
+    "id": "T-0102",
+    "subject": "Is this covered by warranty?",
+    "body": "My Sentinel Indoor Camera stopped working after 8 months.",
+    "category": "technical",
+    "priority": "P3",
+    "customer_email": "amir.ibrahim@example.com",
+    "resolution": "Within 1-year warranty (KB-024); replacement issued.",
+    "kb_refs": [
+      "KB-024"
+    ]
+  },
+  {
+    "id": "T-0103",
+    "subject": "Password reset not working",
+    "body": "The reset link says it's expired.",
+    "category": "account",
+    "priority": "P3",
+    "customer_email": "lea.tanaka@example.net",
+    "resolution": "Explained links expire after 1 hour and newer requests invalidate older ones (KB-025). Customer reset successfully.",
+    "kb_refs": [
+      "KB-025"
+    ]
+  },
+  {
+    "id": "T-0104",
+    "subject": "Account locked",
+    "body": "I'm locked out after trying my password a few times.",
+    "category": "account",
+    "priority": "P3",
+    "customer_email": "ava.weber@example.org",
+    "resolution": "Explained the 30-minute automatic unlock (KB-026).",
+    "kb_refs": [
+      "KB-026"
+    ]
+  },
+  {
+    "id": "T-0105",
+    "subject": "Lost my 2FA phone",
+    "body": "I got a new phone and can't sign in because of 2FA.",
+    "category": "account",
+    "priority": "P2",
+    "customer_email": "ivy.tanaka@example.com",
+    "resolution": "No backup codes; identity verified by specialist and 2FA removed (KB-026).",
+    "kb_refs": [
+      "KB-026"
+    ]
+  },
+  {
+    "id": "T-0106",
+    "subject": "Delete my account",
+    "body": "Please delete my account and data.",
+    "category": "account",
+    "priority": "P4",
+    "customer_email": "wael.ibrahim@example.net",
+    "resolution": "Pointed to Account > Privacy > Delete account and the 30-day timeline (KB-028).",
+    "kb_refs": [
+      "KB-028"
+    ]
+  },
+  {
+    "id": "T-0107",
+    "subject": "Price dropped after I bought",
+    "body": "The Nimbus Mesh Router is cheaper now than when I bought it on ORD-10102.",
+    "category": "other",
+    "priority": "P4",
+    "customer_email": "ali.khoury@example.net",
+    "resolution": "Price dropped within 14 days; refunded the difference (KB-030).",
+    "kb_refs": [
+      "KB-030"
+    ]
+  },
+  {
+    "id": "T-0108",
+    "subject": "Support hours?",
+    "body": "What are your support hours?",
+    "category": "other",
+    "priority": "P4",
+    "customer_email": "daniel.okafor@example.com",
+    "resolution": "Shared support hours (KB-029).",
+    "kb_refs": [
+      "KB-029"
+    ]
+  },
+  {
+    "id": "T-0109",
+    "subject": "Where is my order ORD-10014?",
+    "body": "Hi, I ordered the Pulse Smartwatch last week and haven't received it. Can you check?",
+    "category": "shipping",
+    "priority": "P3",
+    "customer_email": "nour.saleh@example.com",
+    "resolution": "Shared tracking link and ETA from the order record. Explained standard shipping takes 3-7 business days (KB-012, KB-013).",
+    "kb_refs": [
+      "KB-012",
+      "KB-013"
+    ]
+  },
+  {
+    "id": "T-0110",
+    "subject": "Order ORD-10116 is late",
+    "body": "My Pulse Smartwatch was supposed to arrive days ago. Tracking hasn't moved.",
+    "category": "shipping",
+    "priority": "P3",
+    "customer_email": "wael.darwish@example.net",
+    "resolution": "Order was 6 business days past ETA, so a carrier trace was opened per KB-014. Customer updated with the trace timeline.",
+    "kb_refs": [
+      "KB-014"
+    ]
+  },
+  {
+    "id": "T-0111",
+    "subject": "Package lost",
+    "body": "Tracking for ORD-10135 says the package is lost. What now?",
+    "category": "shipping",
+    "priority": "P2",
+    "customer_email": "ava.weber@example.org",
+    "resolution": "Carrier confirmed loss. Offered reshipment or refund per KB-015; customer chose reshipment.",
+    "kb_refs": [
+      "KB-015"
+    ]
+  },
+  {
+    "id": "T-0112",
+    "subject": "Change delivery address",
+    "body": "Can I change the address on order ORD-10146? I'm moving.",
+    "category": "shipping",
+    "priority": "P3",
+    "customer_email": "daniel.okafor@example.com",
+    "resolution": "Order was still processing, so the address was updated (KB-016).",
+    "kb_refs": [
+      "KB-016"
+    ]
+  },
+  {
+    "id": "T-0113",
+    "subject": "Do you ship to Canada?",
+    "body": "Hi Noah here, do you deliver internationally and who pays customs?",
+    "category": "shipping",
+    "priority": "P4",
+    "customer_email": "noah.rossi@example.org",
+    "resolution": "Explained international shipping times and that duties are paid by the recipient (KB-017).",
+    "kb_refs": [
+      "KB-017"
+    ]
+  },
+  {
+    "id": "T-0114",
+    "subject": "Charged twice for ORD-10039",
+    "body": "I see two charges on my card for the same order ORD-10039.",
+    "category": "billing",
+    "priority": "P2",
+    "customer_email": "grace.haddad@example.net",
+    "resolution": "One charge was a pending authorization that drops off in 3-5 business days (KB-002). Customer informed.",
+    "kb_refs": [
+      "KB-002"
+    ]
+  },
+  {
+    "id": "T-0115",
+    "subject": "Payment declined",
+    "body": "My card was declined on order ORD-10039 but the card works elsewhere.",
+    "category": "billing",
+    "priority": "P3",
+    "customer_email": "grace.haddad@example.net",
+    "resolution": "Explained retry payment option within 48 hours and that the bank holds the decline reason (KB-003).",
+    "kb_refs": [
+      "KB-003"
+    ]
+  },
+  {
+    "id": "T-0116",
+    "subject": "Need an invoice",
+    "body": "Can I get an invoice for order ORD-10075 for my company?",
+    "category": "billing",
+    "priority": "P4",
+    "customer_email": "maya.chen@example.com",
+    "resolution": "Pointed to Orders > Download invoice. Explained invoices cannot be reissued with new company details (KB-004).",
+    "kb_refs": [
+      "KB-004"
+    ]
+  },
+  {
+    "id": "T-0117",
+    "subject": "What does Lumora Plus include?",
+    "body": "Thinking of upgrading. What do I get with Plus?",
+    "category": "billing",
+    "priority": "P4",
+    "customer_email": "yusuf.aziz@example.com",
+    "resolution": "Explained Plus benefits and price (KB-005).",
+    "kb_refs": [
+      "KB-005"
+    ]
+  },
+  {
+    "id": "T-0118",
+    "subject": "Return the Pulse Smartwatch",
+    "body": "I don't need the Pulse Smartwatch from ORD-10149 anymore. How do I return it?",
+    "category": "refund",
+    "priority": "P3",
+    "customer_email": "adam.darwish@example.net",
+    "resolution": "Order was within 30 days. Explained return process and $6.95 label fee for change-of-mind returns (KB-006, KB-008).",
+    "kb_refs": [
+      "KB-006",
+      "KB-008"
+    ]
+  },
+  {
+    "id": "T-0119",
+    "subject": "Refund for open box item",
+    "body": "I want to return the open-box earbuds from ORD-10048.",
+    "category": "refund",
+    "priority": "P3",
+    "customer_email": "eva.silva@example.com",
+    "resolution": "Declined politely: final sale items are not returnable (KB-007).",
+    "kb_refs": [
+      "KB-007"
+    ]
+  },
+  {
+    "id": "T-0120",
+    "subject": "Cancel order ORD-10085",
+    "body": "Please cancel order ORD-10085, I ordered by mistake.",
+    "category": "refund",
+    "priority": "P3",
+    "customer_email": "samir.hamdan@example.org",
+    "resolution": "Order was still processing; cancelled with full refund (KB-009).",
+    "kb_refs": [
+      "KB-009"
+    ]
+  },
+  {
+    "id": "T-0121",
+    "subject": "Item arrived broken",
+    "body": "The Nimbus Mesh Router 3-Pack from ORD-10021 arrived with a cracked case.",
+    "category": "refund",
+    "priority": "P3",
+    "customer_email": "adam.kim@example.net",
+    "resolution": "Customer sent photos. Free replacement shipped, no return fee (KB-010).",
+    "kb_refs": [
+      "KB-010"
+    ]
+  },
+  {
+    "id": "T-0122",
+    "subject": "When will I get my refund?",
+    "body": "I returned ORD-10019 a week ago. Where's my refund?",
+    "category": "refund",
+    "priority": "P3",
+    "customer_email": "lucas.moreau@example.com",
+    "resolution": "Warehouse received the item 3 days ago; explained 5-10 business day processing (KB-008).",
+    "kb_refs": [
+      "KB-008"
+    ]
+  },
+  {
+    "id": "T-0123",
+    "subject": "Refund my membership",
+    "body": "My Plus membership renewed and I don't want it.",
+    "category": "refund",
+    "priority": "P3",
+    "customer_email": "eva.silva@example.com",
+    "resolution": "Renewal was within 14 days, so the fee was refunded in full (KB-011).",
+    "kb_refs": [
+      "KB-011"
+    ]
+  },
+  {
+    "id": "T-0124",
+    "subject": "Earbuds won't pair",
+    "body": "My Sentinel Indoor Camera won't connect to my phone.",
+    "category": "technical",
+    "priority": "P3",
+    "customer_email": "samir.darwish@example.net",
+    "resolution": "Walked customer through the reset-and-pair steps in KB-018. Resolved.",
+    "kb_refs": [
+      "KB-018"
+    ]
+  },
+  {
+    "id": "T-0125",
+    "subject": "Watch not syncing",
+    "body": "My Pulse watch stopped syncing steps to the app.",
+    "category": "technical",
+    "priority": "P3",
+    "customer_email": "eva.rossi@example.com",
+    "resolution": "Resync and restart steps from KB-019 fixed the issue.",
+    "kb_refs": [
+      "KB-019"
+    ]
+  },
+  {
+    "id": "T-0126",
+    "subject": "Router setup help",
+    "body": "How do I add the satellites for my Nimbus 3-pack?",
+    "category": "technical",
+    "priority": "P4",
+    "customer_email": "ali.garcia@example.net",
+    "resolution": "Shared satellite setup steps from KB-020.",
+    "kb_refs": [
+      "KB-020"
+    ]
+  },
+  {
+    "id": "T-0127",
+    "subject": "Camera keeps going offline",
+    "body": "My Sentinel camera shows offline every evening.",
+    "category": "technical",
+    "priority": "P3",
+    "customer_email": "hana.garcia@example.com",
+    "resolution": "Customer's camera was on 5 GHz; moved it to 2.4 GHz per KB-021. Resolved.",
+    "kb_refs": [
+      "KB-021"
+    ]
+  },
+  {
+    "id": "T-0128",
+    "subject": "Power bank got very hot",
+    "body": "My power bank got extremely hot while charging and smelled like burning.",
+    "category": "technical",
+    "priority": "P1",
+    "customer_email": "isla.darwish@example.net",
+    "resolution": "Escalated to safety specialist. Customer told to stop using and unplug (KB-023). Free replacement sent.",
+    "kb_refs": [
+      "KB-023"
+    ]
+  },
+  {
+    "id": "T-0129",
+    "subject": "Is this covered by warranty?",
+    "body": "My Volt GaN Charger 65W stopped working after 8 months.",
+    "category": "technical",
+    "priority": "P3",
+    "customer_email": "eva.rossi@example.com",
+    "resolution": "Within 1-year warranty (KB-024); replacement issued.",
+    "kb_refs": [
+      "KB-024"
+    ]
+  },
+  {
+    "id": "T-0130",
+    "subject": "Password reset not working",
+    "body": "The reset link says it's expired.",
+    "category": "account",
+    "priority": "P3",
+    "customer_email": "ivy.tanaka@example.com",
+    "resolution": "Explained links expire after 1 hour and newer requests invalidate older ones (KB-025). Customer reset successfully.",
+    "kb_refs": [
+      "KB-025"
+    ]
+  },
+  {
+    "id": "T-0131",
+    "subject": "Account locked",
+    "body": "I'm locked out after trying my password a few times.",
+    "category": "account",
+    "priority": "P3",
+    "customer_email": "lucas.moreau@example.com",
+    "resolution": "Explained the 30-minute automatic unlock (KB-026).",
+    "kb_refs": [
+      "KB-026"
+    ]
+  },
+  {
+    "id": "T-0132",
+    "subject": "Lost my 2FA phone",
+    "body": "I got a new phone and can't sign in because of 2FA.",
+    "category": "account",
+    "priority": "P2",
+    "customer_email": "maya.chen@example.com",
+    "resolution": "No backup codes; identity verified by specialist and 2FA removed (KB-026).",
+    "kb_refs": [
+      "KB-026"
+    ]
+  },
+  {
+    "id": "T-0133",
+    "subject": "Delete my account",
+    "body": "Please delete my account and data.",
+    "category": "account",
+    "priority": "P4",
+    "customer_email": "nora.rossi@example.com",
+    "resolution": "Pointed to Account > Privacy > Delete account and the 30-day timeline (KB-028).",
+    "kb_refs": [
+      "KB-028"
+    ]
+  },
+  {
+    "id": "T-0134",
+    "subject": "Price dropped after I bought",
+    "body": "The Aero Earbuds (Open Box, Final Sale) is cheaper now than when I bought it on ORD-10080.",
+    "category": "other",
+    "priority": "P4",
+    "customer_email": "karim.tanaka@example.org",
+    "resolution": "Price dropped within 14 days; refunded the difference (KB-030).",
+    "kb_refs": [
+      "KB-030"
+    ]
+  },
+  {
+    "id": "T-0135",
+    "subject": "Support hours?",
+    "body": "What are your support hours?",
+    "category": "other",
+    "priority": "P4",
+    "customer_email": "samir.hamdan@example.org",
+    "resolution": "Shared support hours (KB-029).",
+    "kb_refs": [
+      "KB-029"
+    ]
+  },
+  {
+    "id": "T-0136",
+    "subject": "Where is my order ORD-10117?",
+    "body": "Hi, I ordered the Pulse Smartwatch (Refurbished, Final Sale) last week and haven't received it. Can you check?",
+    "category": "shipping",
+    "priority": "P3",
+    "customer_email": "noah.rossi@example.org",
+    "resolution": "Shared tracking link and ETA from the order record. Explained standard shipping takes 3-7 business days (KB-012, KB-013).",
+    "kb_refs": [
+      "KB-012",
+      "KB-013"
+    ]
+  },
+  {
+    "id": "T-0137",
+    "subject": "Order ORD-10058 is late",
+    "body": "My Pulse Smartwatch was supposed to arrive days ago. Tracking hasn't moved.",
+    "category": "shipping",
+    "priority": "P3",
+    "customer_email": "nora.rossi@example.com",
+    "resolution": "Order was 6 business days past ETA, so a carrier trace was opened per KB-014. Customer updated with the trace timeline.",
+    "kb_refs": [
+      "KB-014"
+    ]
+  },
+  {
+    "id": "T-0138",
+    "subject": "Package lost",
+    "body": "Tracking for ORD-10035 says the package is lost. What now?",
+    "category": "shipping",
+    "priority": "P2",
+    "customer_email": "james.porter@example.com",
+    "resolution": "Carrier confirmed loss. Offered reshipment or refund per KB-015; customer chose reshipment.",
+    "kb_refs": [
+      "KB-015"
+    ]
+  },
+  {
+    "id": "T-0139",
+    "subject": "Change delivery address",
+    "body": "Can I change the address on order ORD-10038? I'm moving.",
+    "category": "shipping",
+    "priority": "P3",
+    "customer_email": "lea.tanaka@example.net",
+    "resolution": "Order was still processing, so the address was updated (KB-016).",
+    "kb_refs": [
+      "KB-016"
+    ]
+  },
+  {
+    "id": "T-0140",
+    "subject": "Do you ship to Canada?",
+    "body": "Hi Eva here, do you deliver internationally and who pays customs?",
+    "category": "shipping",
+    "priority": "P4",
+    "customer_email": "eva.rossi@example.com",
+    "resolution": "Explained international shipping times and that duties are paid by the recipient (KB-017).",
+    "kb_refs": [
+      "KB-017"
+    ]
+  },
+  {
+    "id": "T-0141",
+    "subject": "Charged twice for ORD-10145",
+    "body": "I see two charges on my card for the same order ORD-10145.",
+    "category": "billing",
+    "priority": "P2",
+    "customer_email": "wael.ibrahim@example.net",
+    "resolution": "One charge was a pending authorization that drops off in 3-5 business days (KB-002). Customer informed.",
+    "kb_refs": [
+      "KB-002"
+    ]
+  },
+  {
+    "id": "T-0142",
+    "subject": "Payment declined",
+    "body": "My card was declined on order ORD-10091 but the card works elsewhere.",
+    "category": "billing",
+    "priority": "P3",
+    "customer_email": "hana.garcia@example.com",
+    "resolution": "Explained retry payment option within 48 hours and that the bank holds the decline reason (KB-003).",
+    "kb_refs": [
+      "KB-003"
+    ]
+  },
+  {
+    "id": "T-0143",
+    "subject": "Need an invoice",
+    "body": "Can I get an invoice for order ORD-10058 for my company?",
+    "category": "billing",
+    "priority": "P4",
+    "customer_email": "nora.rossi@example.com",
+    "resolution": "Pointed to Orders > Download invoice. Explained invoices cannot be reissued with new company details (KB-004).",
+    "kb_refs": [
+      "KB-004"
+    ]
+  },
+  {
+    "id": "T-0144",
+    "subject": "What does Lumora Plus include?",
+    "body": "Thinking of upgrading. What do I get with Plus?",
+    "category": "billing",
+    "priority": "P4",
+    "customer_email": "ivy.tanaka@example.com",
+    "resolution": "Explained Plus benefits and price (KB-005).",
+    "kb_refs": [
+      "KB-005"
+    ]
+  },
+  {
+    "id": "T-0145",
+    "subject": "Return the USB-C Cable 2m",
+    "body": "I don't need the USB-C Cable 2m from ORD-10094 anymore. How do I return it?",
+    "category": "refund",
+    "priority": "P3",
+    "customer_email": "lily.garcia@example.org",
+    "resolution": "Order was within 30 days. Explained return process and $6.95 label fee for change-of-mind returns (KB-006, KB-008).",
+    "kb_refs": [
+      "KB-006",
+      "KB-008"
+    ]
+  },
+  {
+    "id": "T-0146",
+    "subject": "Refund for open box item",
+    "body": "I want to return the open-box earbuds from ORD-10095.",
+    "category": "refund",
+    "priority": "P3",
+    "customer_email": "james.porter@example.com",
+    "resolution": "Declined politely: final sale items are not returnable (KB-007).",
+    "kb_refs": [
+      "KB-007"
+    ]
+  },
+  {
+    "id": "T-0147",
+    "subject": "Cancel order ORD-10020",
+    "body": "Please cancel order ORD-10020, I ordered by mistake.",
+    "category": "refund",
+    "priority": "P3",
+    "customer_email": "nour.saleh@example.com",
+    "resolution": "Order was still processing; cancelled with full refund (KB-009).",
+    "kb_refs": [
+      "KB-009"
+    ]
+  },
+  {
+    "id": "T-0148",
+    "subject": "Item arrived broken",
+    "body": "The Aero Earbuds (Open Box, Final Sale) from ORD-10022 arrived with a cracked case.",
+    "category": "refund",
+    "priority": "P3",
+    "customer_email": "amir.ibrahim@example.com",
+    "resolution": "Customer sent photos. Free replacement shipped, no return fee (KB-010).",
+    "kb_refs": [
+      "KB-010"
+    ]
+  },
+  {
+    "id": "T-0149",
+    "subject": "When will I get my refund?",
+    "body": "I returned ORD-10094 a week ago. Where's my refund?",
+    "category": "refund",
+    "priority": "P3",
+    "customer_email": "lily.garcia@example.org",
+    "resolution": "Warehouse received the item 3 days ago; explained 5-10 business day processing (KB-008).",
+    "kb_refs": [
+      "KB-008"
+    ]
+  },
+  {
+    "id": "T-0150",
+    "subject": "Refund my membership",
+    "body": "My Plus membership renewed and I don't want it.",
+    "category": "refund",
+    "priority": "P3",
+    "customer_email": "lina.farah@example.com",
+    "resolution": "Renewal was within 14 days, so the fee was refunded in full (KB-011).",
+    "kb_refs": [
+      "KB-011"
+    ]
+  },
+  {
+    "id": "T-0151",
+    "subject": "Earbuds won't pair",
+    "body": "My Sentinel Indoor Camera won't connect to my phone.",
+    "category": "technical",
+    "priority": "P3",
+    "customer_email": "amir.ibrahim@example.com",
+    "resolution": "Walked customer through the reset-and-pair steps in KB-018. Resolved.",
+    "kb_refs": [
+      "KB-018"
+    ]
+  },
+  {
+    "id": "T-0152",
+    "subject": "Watch not syncing",
+    "body": "My Pulse watch stopped syncing steps to the app.",
+    "category": "technical",
+    "priority": "P3",
+    "customer_email": "nora.rossi@example.com",
+    "resolution": "Resync and restart steps from KB-019 fixed the issue.",
+    "kb_refs": [
+      "KB-019"
+    ]
+  },
+  {
+    "id": "T-0153",
+    "subject": "Router setup help",
+    "body": "How do I add the satellites for my Nimbus 3-pack?",
+    "category": "technical",
+    "priority": "P4",
+    "customer_email": "hassan.aziz@example.com",
+    "resolution": "Shared satellite setup steps from KB-020.",
+    "kb_refs": [
+      "KB-020"
+    ]
+  },
+  {
+    "id": "T-0154",
+    "subject": "Camera keeps going offline",
+    "body": "My Sentinel camera shows offline every evening.",
+    "category": "technical",
+    "priority": "P3",
+    "customer_email": "lea.tanaka@example.net",
+    "resolution": "Customer's camera was on 5 GHz; moved it to 2.4 GHz per KB-021. Resolved.",
+    "kb_refs": [
+      "KB-021"
+    ]
+  },
+  {
+    "id": "T-0155",
+    "subject": "Power bank got very hot",
+    "body": "My power bank got extremely hot while charging and smelled like burning.",
+    "category": "technical",
+    "priority": "P1",
+    "customer_email": "mia.darwish@example.com",
+    "resolution": "Escalated to safety specialist. Customer told to stop using and unplug (KB-023). Free replacement sent.",
+    "kb_refs": [
+      "KB-023"
+    ]
+  },
+  {
+    "id": "T-0156",
+    "subject": "Is this covered by warranty?",
+    "body": "My Pulse Smartwatch Band stopped working after 8 months.",
+    "category": "technical",
+    "priority": "P3",
+    "customer_email": "isla.darwish@example.net",
+    "resolution": "Within 1-year warranty (KB-024); replacement issued.",
+    "kb_refs": [
+      "KB-024"
+    ]
+  },
+  {
+    "id": "T-0157",
+    "subject": "Password reset not working",
+    "body": "The reset link says it's expired.",
+    "category": "account",
+    "priority": "P3",
+    "customer_email": "james.porter@example.com",
+    "resolution": "Explained links expire after 1 hour and newer requests invalidate older ones (KB-025). Customer reset successfully.",
+    "kb_refs": [
+      "KB-025"
+    ]
+  },
+  {
+    "id": "T-0158",
+    "subject": "Account locked",
+    "body": "I'm locked out after trying my password a few times.",
+    "category": "account",
+    "priority": "P3",
+    "customer_email": "maya.chen@example.com",
+    "resolution": "Explained the 30-minute automatic unlock (KB-026).",
+    "kb_refs": [
+      "KB-026"
+    ]
+  },
+  {
+    "id": "T-0159",
+    "subject": "Lost my 2FA phone",
+    "body": "I got a new phone and can't sign in because of 2FA.",
+    "category": "account",
+    "priority": "P2",
+    "customer_email": "nour.saleh@example.com",
+    "resolution": "No backup codes; identity verified by specialist and 2FA removed (KB-026).",
+    "kb_refs": [
+      "KB-026"
+    ]
+  },
+  {
+    "id": "T-0160",
+    "subject": "Delete my account",
+    "body": "Please delete my account and data.",
+    "category": "account",
+    "priority": "P4",
+    "customer_email": "isla.darwish@example.net",
+    "resolution": "Pointed to Account > Privacy > Delete account and the 30-day timeline (KB-028).",
+    "kb_refs": [
+      "KB-028"
+    ]
+  },
+  {
+    "id": "T-0161",
+    "subject": "Price dropped after I bought",
+    "body": "The Sentinel Indoor Camera is cheaper now than when I bought it on ORD-10134.",
+    "category": "other",
+    "priority": "P4",
+    "customer_email": "lea.tanaka@example.net",
+    "resolution": "Price dropped within 14 days; refunded the difference (KB-030).",
+    "kb_refs": [
+      "KB-030"
+    ]
+  },
+  {
+    "id": "T-0162",
+    "subject": "Support hours?",
+    "body": "What are your support hours?",
+    "category": "other",
+    "priority": "P4",
+    "customer_email": "bilal.silva@example.org",
+    "resolution": "Shared support hours (KB-029).",
+    "kb_refs": [
+      "KB-029"
+    ]
+  },
+  {
+    "id": "T-0163",
+    "subject": "Where is my order ORD-10039?",
+    "body": "Hi, I ordered the Aero Max Headphones last week and haven't received it. Can you check?",
+    "category": "shipping",
+    "priority": "P3",
+    "customer_email": "grace.haddad@example.net",
+    "resolution": "Shared tracking link and ETA from the order record. Explained standard shipping takes 3-7 business days (KB-012, KB-013).",
+    "kb_refs": [
+      "KB-012",
+      "KB-013"
+    ]
+  },
+  {
+    "id": "T-0164",
+    "subject": "Order ORD-10067 is late",
+    "body": "My Pulse Smartwatch (Refurbished, Final Sale) was supposed to arrive days ago. Tracking hasn't moved.",
+    "category": "shipping",
+    "priority": "P3",
+    "customer_email": "ali.mansour@example.net",
+    "resolution": "Order was 6 business days past ETA, so a carrier trace was opened per KB-014. Customer updated with the trace timeline.",
+    "kb_refs": [
+      "KB-014"
+    ]
+  },
+  {
+    "id": "T-0165",
+    "subject": "Package lost",
+    "body": "Tracking for ORD-10144 says the package is lost. What now?",
+    "category": "shipping",
+    "priority": "P2",
+    "customer_email": "samir.hamdan@example.org",
+    "resolution": "Carrier confirmed loss. Offered reshipment or refund per KB-015; customer chose reshipment.",
+    "kb_refs": [
+      "KB-015"
+    ]
+  },
+  {
+    "id": "T-0166",
+    "subject": "Change delivery address",
+    "body": "Can I change the address on order ORD-10057? I'm moving.",
+    "category": "shipping",
+    "priority": "P3",
+    "customer_email": "eva.rossi@example.com",
+    "resolution": "Order was still processing, so the address was updated (KB-016).",
+    "kb_refs": [
+      "KB-016"
+    ]
+  },
+  {
+    "id": "T-0167",
+    "subject": "Do you ship to Canada?",
+    "body": "Hi Rania here, do you deliver internationally and who pays customs?",
+    "category": "shipping",
+    "priority": "P4",
+    "customer_email": "rania.aziz@example.com",
+    "resolution": "Explained international shipping times and that duties are paid by the recipient (KB-017).",
+    "kb_refs": [
+      "KB-017"
+    ]
+  },
+  {
+    "id": "T-0168",
+    "subject": "Charged twice for ORD-10022",
+    "body": "I see two charges on my card for the same order ORD-10022.",
+    "category": "billing",
+    "priority": "P2",
+    "customer_email": "amir.ibrahim@example.com",
+    "resolution": "One charge was a pending authorization that drops off in 3-5 business days (KB-002). Customer informed.",
+    "kb_refs": [
+      "KB-002"
+    ]
+  },
+  {
+    "id": "T-0169",
+    "subject": "Payment declined",
+    "body": "My card was declined on order ORD-10118 but the card works elsewhere.",
+    "category": "billing",
+    "priority": "P3",
+    "customer_email": "noah.rossi@example.org",
+    "resolution": "Explained retry payment option within 48 hours and that the bank holds the decline reason (KB-003).",
+    "kb_refs": [
+      "KB-003"
+    ]
+  },
+  {
+    "id": "T-0170",
+    "subject": "Need an invoice",
+    "body": "Can I get an invoice for order ORD-10138 for my company?",
+    "category": "billing",
+    "priority": "P4",
+    "customer_email": "rami.sabbagh@example.org",
+    "resolution": "Pointed to Orders > Download invoice. Explained invoices cannot be reissued with new company details (KB-004).",
+    "kb_refs": [
+      "KB-004"
+    ]
+  },
+  {
+    "id": "T-0171",
+    "subject": "What does Lumora Plus include?",
+    "body": "Thinking of upgrading. What do I get with Plus?",
+    "category": "billing",
+    "priority": "P4",
+    "customer_email": "grace.haddad@example.net",
+    "resolution": "Explained Plus benefits and price (KB-005).",
+    "kb_refs": [
+      "KB-005"
+    ]
+  },
+  {
+    "id": "T-0172",
+    "subject": "Return the Halo Smart Desk Lamp",
+    "body": "I don't need the Halo Smart Desk Lamp from ORD-10032 anymore. How do I return it?",
+    "category": "refund",
+    "priority": "P3",
+    "customer_email": "hassan.haddad@example.com",
+    "resolution": "Order was within 30 days. Explained return process and $6.95 label fee for change-of-mind returns (KB-006, KB-008).",
+    "kb_refs": [
+      "KB-006",
+      "KB-008"
+    ]
+  },
+  {
+    "id": "T-0173",
+    "subject": "Refund for open box item",
+    "body": "I want to return the open-box earbuds from ORD-10057.",
+    "category": "refund",
+    "priority": "P3",
+    "customer_email": "eva.rossi@example.com",
+    "resolution": "Declined politely: final sale items are not returnable (KB-007).",
+    "kb_refs": [
+      "KB-007"
+    ]
+  },
+  {
+    "id": "T-0174",
+    "subject": "Cancel order ORD-10104",
+    "body": "Please cancel order ORD-10104, I ordered by mistake.",
+    "category": "refund",
+    "priority": "P3",
+    "customer_email": "lily.garcia@example.org",
+    "resolution": "Order was still processing; cancelled with full refund (KB-009).",
+    "kb_refs": [
+      "KB-009"
+    ]
+  },
+  {
+    "id": "T-0175",
+    "subject": "Item arrived broken",
+    "body": "The Pulse Smartwatch Band from ORD-10043 arrived with a cracked case.",
+    "category": "refund",
+    "priority": "P3",
+    "customer_email": "omar.khalil@example.com",
+    "resolution": "Customer sent photos. Free replacement shipped, no return fee (KB-010).",
+    "kb_refs": [
+      "KB-010"
+    ]
+  },
+  {
+    "id": "T-0176",
+    "subject": "When will I get my refund?",
+    "body": "I returned ORD-10046 a week ago. Where's my refund?",
+    "category": "refund",
+    "priority": "P3",
+    "customer_email": "noah.rossi@example.org",
+    "resolution": "Warehouse received the item 3 days ago; explained 5-10 business day processing (KB-008).",
+    "kb_refs": [
+      "KB-008"
+    ]
+  },
+  {
+    "id": "T-0177",
+    "subject": "Refund my membership",
+    "body": "My Plus membership renewed and I don't want it.",
+    "category": "refund",
+    "priority": "P3",
+    "customer_email": "hassan.jaber@example.net",
+    "resolution": "Renewal was within 14 days, so the fee was refunded in full (KB-011).",
+    "kb_refs": [
+      "KB-011"
+    ]
+  },
+  {
+    "id": "T-0178",
+    "subject": "Earbuds won't pair",
+    "body": "My Volt 20K Power Bank won't connect to my phone.",
+    "category": "technical",
+    "priority": "P3",
+    "customer_email": "julia.darwish@example.net",
+    "resolution": "Walked customer through the reset-and-pair steps in KB-018. Resolved.",
+    "kb_refs": [
+      "KB-018"
+    ]
+  },
+  {
+    "id": "T-0179",
+    "subject": "Watch not syncing",
+    "body": "My Pulse watch stopped syncing steps to the app.",
+    "category": "technical",
+    "priority": "P3",
+    "customer_email": "wael.silva@example.com",
+    "resolution": "Resync and restart steps from KB-019 fixed the issue.",
+    "kb_refs": [
+      "KB-019"
+    ]
+  },
+  {
+    "id": "T-0180",
+    "subject": "Router setup help",
+    "body": "How do I add the satellites for my Nimbus 3-pack?",
+    "category": "technical",
+    "priority": "P4",
+    "customer_email": "lucas.moreau@example.com",
+    "resolution": "Shared satellite setup steps from KB-020.",
+    "kb_refs": [
+      "KB-020"
+    ]
+  },
+  {
+    "id": "T-0181",
+    "subject": "Camera keeps going offline",
+    "body": "My Sentinel camera shows offline every evening.",
+    "category": "technical",
+    "priority": "P3",
+    "customer_email": "lea.tanaka@example.net",
+    "resolution": "Customer's camera was on 5 GHz; moved it to 2.4 GHz per KB-021. Resolved.",
+    "kb_refs": [
+      "KB-021"
+    ]
+  },
+  {
+    "id": "T-0182",
+    "subject": "Power bank got very hot",
+    "body": "My power bank got extremely hot while charging and smelled like burning.",
+    "category": "technical",
+    "priority": "P1",
+    "customer_email": "lily.garcia@example.org",
+    "resolution": "Escalated to safety specialist. Customer told to stop using and unplug (KB-023). Free replacement sent.",
+    "kb_refs": [
+      "KB-023"
+    ]
+  },
+  {
+    "id": "T-0183",
+    "subject": "Is this covered by warranty?",
+    "body": "My Pulse Smartwatch Band stopped working after 8 months.",
+    "category": "technical",
+    "priority": "P3",
+    "customer_email": "hassan.haddad@example.com",
+    "resolution": "Within 1-year warranty (KB-024); replacement issued.",
+    "kb_refs": [
+      "KB-024"
+    ]
+  },
+  {
+    "id": "T-0184",
+    "subject": "Password reset not working",
+    "body": "The reset link says it's expired.",
+    "category": "account",
+    "priority": "P3",
+    "customer_email": "wael.ibrahim@example.net",
+    "resolution": "Explained links expire after 1 hour and newer requests invalidate older ones (KB-025). Customer reset successfully.",
+    "kb_refs": [
+      "KB-025"
+    ]
+  },
+  {
+    "id": "T-0185",
+    "subject": "Account locked",
+    "body": "I'm locked out after trying my password a few times.",
+    "category": "account",
+    "priority": "P3",
+    "customer_email": "samir.darwish@example.net",
+    "resolution": "Explained the 30-minute automatic unlock (KB-026).",
+    "kb_refs": [
+      "KB-026"
+    ]
+  },
+  {
+    "id": "T-0186",
+    "subject": "Lost my 2FA phone",
+    "body": "I got a new phone and can't sign in because of 2FA.",
+    "category": "account",
+    "priority": "P2",
+    "customer_email": "lucas.moreau@example.com",
+    "resolution": "No backup codes; identity verified by specialist and 2FA removed (KB-026).",
+    "kb_refs": [
+      "KB-026"
+    ]
+  },
+  {
+    "id": "T-0187",
+    "subject": "Delete my account",
+    "body": "Please delete my account and data.",
+    "category": "account",
+    "priority": "P4",
+    "customer_email": "ali.garcia@example.net",
+    "resolution": "Pointed to Account > Privacy > Delete account and the 30-day timeline (KB-028).",
+    "kb_refs": [
+      "KB-028"
+    ]
+  },
+  {
+    "id": "T-0188",
+    "subject": "Price dropped after I bought",
+    "body": "The Aero Earbuds (Open Box, Final Sale) is cheaper now than when I bought it on ORD-10132.",
+    "category": "other",
+    "priority": "P4",
+    "customer_email": "bilal.silva@example.org",
+    "resolution": "Price dropped within 14 days; refunded the difference (KB-030).",
+    "kb_refs": [
+      "KB-030"
+    ]
+  },
+  {
+    "id": "T-0189",
+    "subject": "Support hours?",
+    "body": "What are your support hours?",
+    "category": "other",
+    "priority": "P4",
+    "customer_email": "lina.farah@example.com",
+    "resolution": "Shared support hours (KB-029).",
+    "kb_refs": [
+      "KB-029"
+    ]
+  },
+  {
+    "id": "T-0190",
+    "subject": "Where is my order ORD-10122?",
+    "body": "Hi, I ordered the Aero Earbuds (Open Box, Final Sale) last week and haven't received it. Can you check?",
+    "category": "shipping",
+    "priority": "P3",
+    "customer_email": "hassan.aziz@example.com",
+    "resolution": "Shared tracking link and ETA from the order record. Explained standard shipping takes 3-7 business days (KB-012, KB-013).",
+    "kb_refs": [
+      "KB-012",
+      "KB-013"
+    ]
+  },
+  {
+    "id": "T-0191",
+    "subject": "Order ORD-10063 is late",
+    "body": "My Halo Smart Desk Lamp was supposed to arrive days ago. Tracking hasn't moved.",
+    "category": "shipping",
+    "priority": "P3",
+    "customer_email": "nora.rossi@example.com",
+    "resolution": "Order was 6 business days past ETA, so a carrier trace was opened per KB-014. Customer updated with the trace timeline.",
+    "kb_refs": [
+      "KB-014"
+    ]
+  },
+  {
+    "id": "T-0192",
+    "subject": "Package lost",
+    "body": "Tracking for ORD-10058 says the package is lost. What now?",
+    "category": "shipping",
+    "priority": "P2",
+    "customer_email": "nora.rossi@example.com",
+    "resolution": "Carrier confirmed loss. Offered reshipment or refund per KB-015; customer chose reshipment.",
+    "kb_refs": [
+      "KB-015"
+    ]
+  },
+  {
+    "id": "T-0193",
+    "subject": "Change delivery address",
+    "body": "Can I change the address on order ORD-10103? I'm moving.",
+    "category": "shipping",
+    "priority": "P3",
+    "customer_email": "samir.dubois@example.net",
+    "resolution": "Order was still processing, so the address was updated (KB-016).",
+    "kb_refs": [
+      "KB-016"
+    ]
+  },
+  {
+    "id": "T-0194",
+    "subject": "Do you ship to Canada?",
+    "body": "Hi Noah here, do you deliver internationally and who pays customs?",
+    "category": "shipping",
+    "priority": "P4",
+    "customer_email": "noah.rossi@example.org",
+    "resolution": "Explained international shipping times and that duties are paid by the recipient (KB-017).",
+    "kb_refs": [
+      "KB-017"
+    ]
+  },
+  {
+    "id": "T-0195",
+    "subject": "Charged twice for ORD-10048",
+    "body": "I see two charges on my card for the same order ORD-10048.",
+    "category": "billing",
+    "priority": "P2",
+    "customer_email": "eva.silva@example.com",
+    "resolution": "One charge was a pending authorization that drops off in 3-5 business days (KB-002). Customer informed.",
+    "kb_refs": [
+      "KB-002"
+    ]
+  },
+  {
+    "id": "T-0196",
+    "subject": "Payment declined",
+    "body": "My card was declined on order ORD-10083 but the card works elsewhere.",
+    "category": "billing",
+    "priority": "P3",
+    "customer_email": "isla.darwish@example.net",
+    "resolution": "Explained retry payment option within 48 hours and that the bank holds the decline reason (KB-003).",
+    "kb_refs": [
+      "KB-003"
+    ]
+  },
+  {
+    "id": "T-0197",
+    "subject": "Need an invoice",
+    "body": "Can I get an invoice for order ORD-10063 for my company?",
+    "category": "billing",
+    "priority": "P4",
+    "customer_email": "nora.rossi@example.com",
+    "resolution": "Pointed to Orders > Download invoice. Explained invoices cannot be reissued with new company details (KB-004).",
+    "kb_refs": [
+      "KB-004"
+    ]
+  },
+  {
+    "id": "T-0198",
+    "subject": "What does Lumora Plus include?",
+    "body": "Thinking of upgrading. What do I get with Plus?",
+    "category": "billing",
+    "priority": "P4",
+    "customer_email": "lea.tanaka@example.net",
+    "resolution": "Explained Plus benefits and price (KB-005).",
+    "kb_refs": [
+      "KB-005"
+    ]
+  },
+  {
+    "id": "T-0199",
+    "subject": "Return the Nimbus Mesh Router 3-Pack",
+    "body": "I don't need the Nimbus Mesh Router 3-Pack from ORD-10120 anymore. How do I return it?",
+    "category": "refund",
+    "priority": "P3",
+    "customer_email": "lily.garcia@example.org",
+    "resolution": "Order was within 30 days. Explained return process and $6.95 label fee for change-of-mind returns (KB-006, KB-008).",
+    "kb_refs": [
+      "KB-006",
+      "KB-008"
+    ]
+  },
+  {
+    "id": "T-0200",
+    "subject": "Refund for open box item",
+    "body": "I want to return the open-box earbuds from ORD-10036.",
+    "category": "refund",
+    "priority": "P3",
+    "customer_email": "zoe.nasser@example.net",
+    "resolution": "Declined politely: final sale items are not returnable (KB-007).",
+    "kb_refs": [
+      "KB-007"
+    ]
+  }
+]

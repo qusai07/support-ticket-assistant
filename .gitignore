@@ -1,0 +1,12 @@
+.venv/
+web/node_modules/
+web/.next/
+web/.next-prod/
+web/build.log
+__pycache__/
+*.pyc
+.env
+storage/
+.pytest_cache/
+evals/reports/*.json
+web/.next-shots/

@@ -1,0 +1,60 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --bg: 247 247 251;
+  --surface: 255 255 255;
+  --sunken: 241 242 247;
+  --line: 228 228 238;
+  --ink: 24 26 38;
+  --muted: 102 106 128;
+  --primary: 79 70 229;
+  --primary-fg: 255 255 255;
+  --primary-soft: 238 237 253;
+  --danger: 200 30 30;
+  --danger-soft: 254 236 236;
+  --warn: 180 83 9;
+  --warn-soft: 254 243 224;
+  --ok: 4 120 87;
+  --ok-soft: 225 247 238;
+  --info: 3 105 161;
+  --info-soft: 224 242 254;
+  color-scheme: light;
+}
+
+.dark {
+  --bg: 14 15 22;
+  --surface: 23 24 34;
+  --sunken: 18 19 27;
+  --line: 44 46 62;
+  --ink: 232 233 242;
+  --muted: 150 154 176;
+  --primary: 129 120 255;
+  --primary-fg: 255 255 255;
+  --primary-soft: 40 38 82;
+  --danger: 248 113 113;
+  --danger-soft: 69 26 30;
+  --warn: 251 191 36;
+  --warn-soft: 66 46 12;
+  --ok: 52 211 153;
+  --ok-soft: 14 56 44;
+  --info: 56 189 248;
+  --info-soft: 12 48 68;
+  color-scheme: dark;
+}
+
+html, body { height: 100%; }
+body { @apply bg-bg text-ink antialiased; }
+
+/* Arabic reads better slightly larger with more line height */
+html[lang="ar"] body { font-size: 15px; line-height: 1.7; }
+
+/* User-generated text (ticket bodies, drafts) picks its own direction per paragraph:
+   an Arabic message renders RTL even inside the English UI, and vice versa. */
+.bidi { unicode-bidi: plaintext; white-space: pre-wrap; }
+
+:focus-visible { @apply outline-none ring-2 ring-primary/60 ring-offset-1 ring-offset-bg; }
+
+::-webkit-scrollbar { width: 10px; height: 10px; }
+::-webkit-scrollbar-thumb { background: rgb(var(--line)); border-radius: 99px; border: 2px solid rgb(var(--bg)); }

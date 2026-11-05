@@ -1,0 +1,338 @@
+[
+  {
+    "id": "KB-001",
+    "title": "Accepted payment methods",
+    "category": "billing",
+    "body": "Lumora accepts Visa, Mastercard, American Express, PayPal, and bank transfer. Payment is captured when the order is placed. Bank transfers must arrive within 3 business days or the order is cancelled automatically.",
+    "title_ar": "طرق الدفع المقبولة",
+    "body_ar": "تقبل Lumora بطاقات Visa وMastercard وAmerican Express، وPayPal، والتحويل البنكي. يتم خصم المبلغ عند تقديم الطلب. يجب أن يصل التحويل البنكي خلال 3 أيام عمل وإلا يُلغى الطلب تلقائياً.",
+    "policy_tags": [
+      "payment"
+    ]
+  },
+  {
+    "id": "KB-002",
+    "title": "Duplicate or double charges",
+    "category": "billing",
+    "body": "If you see two charges for one order, check whether one is a pending authorization. Pending authorizations drop off automatically within 3-5 business days. If the order record shows two captured charges, the duplicate charge is reversed by our billing team within 5-7 business days after verification. Customers do not need to contact their bank.",
+    "title_ar": "الخصم المكرر أو المزدوج",
+    "body_ar": "إذا ظهر خصمان لطلب واحد، تحقق أولاً مما إذا كان أحدهما حجزاً مؤقتاً (تفويضاً معلقاً). تختفي الحجوزات المؤقتة تلقائياً خلال 3-5 أيام عمل. إذا أظهر سجل الطلب خصمين فعليين، يقوم فريق الفوترة بعكس الخصم المكرر خلال 5-7 أيام عمل بعد التحقق. لا حاجة للتواصل مع البنك.",
+    "policy_tags": [
+      "duplicate_charge"
+    ]
+  },
+  {
+    "id": "KB-003",
+    "title": "Failed payments and declined cards",
+    "category": "billing",
+    "body": "If a payment fails, the order stays in 'processing' for 48 hours. You can retry payment from Orders > Retry payment using the same or a different method. After 48 hours the order is cancelled and no money is captured. Lumora cannot see why a bank declined a card; contact your bank for the decline reason.",
+    "title_ar": "فشل الدفع ورفض البطاقة",
+    "body_ar": "إذا فشل الدفع، يبقى الطلب بحالة 'processing' لمدة 48 ساعة. يمكنك إعادة محاولة الدفع من Orders > Retry payment بنفس الطريقة أو بطريقة أخرى. بعد 48 ساعة يُلغى الطلب ولا يُخصم أي مبلغ. لا تستطيع Lumora معرفة سبب رفض البنك للبطاقة؛ تواصل مع البنك لمعرفة السبب.",
+    "policy_tags": [
+      "payment_failed"
+    ]
+  },
+  {
+    "id": "KB-004",
+    "title": "Invoices and receipts",
+    "category": "billing",
+    "body": "An invoice is emailed when the order ships. You can download a PDF invoice anytime from Orders > select order > Download invoice. To add a company name or VAT number, update Account > Billing details before ordering; invoices cannot be reissued with new details.",
+    "title_ar": "الفواتير والإيصالات",
+    "body_ar": "تُرسل الفاتورة بالبريد الإلكتروني عند شحن الطلب. يمكنك تنزيل فاتورة PDF في أي وقت من Orders > اختر الطلب > Download invoice. لإضافة اسم شركة أو رقم ضريبي، حدّث Account > Billing details قبل الطلب؛ لا يمكن إعادة إصدار الفواتير ببيانات جديدة.",
+    "policy_tags": [
+      "invoice"
+    ]
+  },
+  {
+    "id": "KB-005",
+    "title": "Lumora Plus and Lumora Business memberships",
+    "category": "billing",
+    "body": "Lumora Plus (plan 'pro') costs $59 per year and includes free standard shipping and early access to sales. Lumora Business (plan 'enterprise') costs $199 per year and adds a 2-year warranty and a dedicated account manager. Memberships renew automatically each year on the renewal date. You can turn off auto-renew from Account > Membership.",
+    "title_ar": "عضوية Lumora Plus وLumora Business",
+    "body_ar": "تكلفة Lumora Plus (خطة 'pro') هي $59 سنوياً وتشمل الشحن العادي المجاني والوصول المبكر للعروض. تكلفة Lumora Business (خطة 'enterprise') هي $199 سنوياً وتضيف ضماناً لمدة سنتين ومدير حساب مخصصاً. تتجدد العضوية تلقائياً كل سنة في تاريخ التجديد، ويمكنك إيقاف التجديد التلقائي من Account > Membership.",
+    "policy_tags": [
+      "subscription"
+    ]
+  },
+  {
+    "id": "KB-006",
+    "title": "Return and refund policy",
+    "category": "refund",
+    "body": "Items can be returned within 30 days of delivery (the delivery day counts as day 0; day 30 is the last eligible day). Items must be unused and in original packaging, unless defective. Change-of-mind returns have a $6.95 return label fee deducted from the refund. Defective items are returned free. Refunds go to the original payment method. Final sale items are excluded (see KB-007).",
+    "title_ar": "سياسة الإرجاع والاسترداد",
+    "body_ar": "يمكن إرجاع المنتجات خلال 30 يوماً من تاريخ التسليم (يوم التسليم هو اليوم 0، واليوم 30 هو آخر يوم مسموح). يجب أن تكون المنتجات غير مستخدمة وفي عبوتها الأصلية، إلا إذا كانت معيبة. في حالات الإرجاع لتغيير الرأي تُخصم رسوم ملصق إرجاع قدرها $6.95 من المبلغ المسترد. إرجاع المنتجات المعيبة مجاني. يُعاد المبلغ إلى وسيلة الدفع الأصلية. منتجات البيع النهائي مستثناة (راجع KB-007).",
+    "policy_tags": [
+      "refund_window",
+      "return"
+    ]
+  },
+  {
+    "id": "KB-007",
+    "title": "Final sale, open-box and refurbished items",
+    "category": "refund",
+    "body": "Items labeled 'Final Sale' (open box and refurbished) cannot be returned or refunded. If a final sale item is dead on arrival and reported within 7 days of delivery, Lumora provides a replacement of the same item only, not a refund.",
+    "title_ar": "منتجات البيع النهائي والمفتوحة والمجددة",
+    "body_ar": "المنتجات المعلّمة 'Final Sale' (المفتوحة العبوة والمجددة) لا يمكن إرجاعها أو استرداد ثمنها. إذا وصل منتج بيع نهائي لا يعمل وتم الإبلاغ خلال 7 أيام من التسليم، توفر Lumora بديلاً من نفس المنتج فقط، وليس استرداداً للمبلغ.",
+    "policy_tags": [
+      "final_sale"
+    ]
+  },
+  {
+    "id": "KB-008",
+    "title": "Refund processing times",
+    "category": "refund",
+    "body": "Refunds are issued within 5-10 business days after the warehouse receives the returned item. Card refunds may take an additional 3-5 business days to appear, depending on the bank. PayPal refunds usually appear within 2 business days of being issued.",
+    "title_ar": "مدة معالجة الاسترداد",
+    "body_ar": "يتم إصدار المبلغ المسترد خلال 5-10 أيام عمل بعد استلام المستودع للمنتج المرتجع. قد تحتاج استردادات البطاقات 3-5 أيام عمل إضافية لتظهر حسب البنك. تظهر استردادات PayPal عادة خلال يومي عمل من إصدارها.",
+    "policy_tags": [
+      "refund_timing"
+    ]
+  },
+  {
+    "id": "KB-009",
+    "title": "Cancelling an order",
+    "category": "refund",
+    "body": "Orders can be cancelled for a full refund while their status is 'processing'. Once an order has shipped it cannot be cancelled; instead, return it after delivery under KB-006. Cancellation refunds are issued immediately and appear within 3-5 business days.",
+    "title_ar": "إلغاء الطلب",
+    "body_ar": "يمكن إلغاء الطلب مع استرداد كامل المبلغ طالما أن حالته 'processing'. بعد شحن الطلب لا يمكن إلغاؤه؛ بدلاً من ذلك يمكن إرجاعه بعد التسليم وفق KB-006. يتم إصدار مبلغ الإلغاء فوراً ويظهر خلال 3-5 أيام عمل.",
+    "policy_tags": [
+      "cancellation"
+    ]
+  },
+  {
+    "id": "KB-010",
+    "title": "Damaged or defective on arrival",
+    "category": "refund",
+    "body": "If an item arrives damaged or defective, report it within 30 days of delivery with a photo of the item and packaging. You can choose a free replacement or a full refund; no return fee applies. For final sale items, see KB-007.",
+    "title_ar": "منتج تالف أو معيب عند الوصول",
+    "body_ar": "إذا وصل المنتج تالفاً أو معيباً، أبلغ عن ذلك خلال 30 يوماً من التسليم مع صورة للمنتج والعبوة. يمكنك اختيار بديل مجاني أو استرداد كامل المبلغ، دون أي رسوم إرجاع. لمنتجات البيع النهائي راجع KB-007.",
+    "policy_tags": [
+      "defective",
+      "damaged"
+    ]
+  },
+  {
+    "id": "KB-011",
+    "title": "Membership refunds",
+    "category": "refund",
+    "body": "Annual membership fees are fully refundable within 14 days of the renewal date. After 14 days, the fee is not refundable, but you can turn off auto-renew so you are not charged next year. Partial or prorated membership refunds are not offered.",
+    "title_ar": "استرداد رسوم العضوية",
+    "body_ar": "رسوم العضوية السنوية قابلة للاسترداد بالكامل خلال 14 يوماً من تاريخ التجديد. بعد 14 يوماً لا يمكن استرداد الرسوم، لكن يمكنك إيقاف التجديد التلقائي حتى لا يتم الخصم في السنة التالية. لا يوجد استرداد جزئي أو نسبي لرسوم العضوية.",
+    "policy_tags": [
+      "subscription_refund"
+    ]
+  },
+  {
+    "id": "KB-012",
+    "title": "Shipping options and delivery times",
+    "category": "shipping",
+    "body": "Standard shipping takes 3-7 business days and is free on orders over $50 and for Lumora Plus and Business members. Express shipping takes 1-2 business days and costs $14.95. Orders placed before 2 pm ship the same business day.",
+    "title_ar": "خيارات الشحن ومدة التوصيل",
+    "body_ar": "يستغرق الشحن العادي 3-7 أيام عمل، وهو مجاني للطلبات التي تتجاوز $50 ولأعضاء Lumora Plus وBusiness. يستغرق الشحن السريع 1-2 يوم عمل وتكلفته $14.95. الطلبات المقدمة قبل الساعة 2 ظهراً تُشحن في نفس يوم العمل.",
+    "policy_tags": [
+      "shipping_times"
+    ]
+  },
+  {
+    "id": "KB-013",
+    "title": "Tracking your order",
+    "category": "shipping",
+    "body": "A tracking number is emailed when your order ships and is shown under Orders. Tracking can take up to 24 hours to show the first scan. The estimated delivery date (ETA) is provided by the carrier.",
+    "title_ar": "تتبع الطلب",
+    "body_ar": "يُرسل رقم التتبع بالبريد الإلكتروني عند شحن الطلب ويظهر في قسم Orders. قد يستغرق ظهور أول تحديث للتتبع حتى 24 ساعة. تاريخ التسليم المتوقع (ETA) تحدده شركة الشحن.",
+    "policy_tags": [
+      "tracking"
+    ]
+  },
+  {
+    "id": "KB-014",
+    "title": "Delayed shipments",
+    "category": "shipping",
+    "body": "Carrier delays of 1-4 business days past the ETA are common and usually resolve without action. If an order is 5 or more business days past its ETA, our support team opens a trace with the carrier, which takes up to 3 business days to complete.",
+    "title_ar": "تأخر الشحنات",
+    "body_ar": "التأخير من 1 إلى 4 أيام عمل بعد التاريخ المتوقع شائع ويُحل عادة دون أي إجراء. إذا تأخر الطلب 5 أيام عمل أو أكثر عن التاريخ المتوقع، يفتح فريق الدعم طلب تتبع (trace) مع شركة الشحن، ويستغرق ذلك حتى 3 أيام عمل.",
+    "policy_tags": [
+      "delay"
+    ]
+  },
+  {
+    "id": "KB-015",
+    "title": "Lost or stolen packages",
+    "category": "shipping",
+    "body": "If the carrier marks a package as lost, or tracking has not updated for 7 days past the ETA, Lumora offers the customer a choice of a free reshipment or a full refund. If tracking shows 'delivered' but the package is missing, wait 48 hours and check with neighbors before contacting us; we then file a carrier claim.",
+    "title_ar": "الطرود المفقودة أو المسروقة",
+    "body_ar": "إذا أعلنت شركة الشحن فقدان الطرد، أو لم يتحدث التتبع لمدة 7 أيام بعد التاريخ المتوقع، تمنح Lumora العميل الخيار بين إعادة الشحن مجاناً أو استرداد كامل المبلغ. إذا أظهر التتبع 'تم التسليم' لكن الطرد غير موجود، انتظر 48 ساعة وتحقق مع الجيران قبل التواصل معنا؛ بعدها نقدم مطالبة لشركة الشحن.",
+    "policy_tags": [
+      "lost_package"
+    ]
+  },
+  {
+    "id": "KB-016",
+    "title": "Changing the shipping address",
+    "category": "shipping",
+    "body": "The shipping address can be changed only while the order status is 'processing'. Once an order has shipped, the address cannot be changed by Lumora; you may be able to redirect the package through the carrier's website using the tracking number.",
+    "title_ar": "تغيير عنوان الشحن",
+    "body_ar": "يمكن تغيير عنوان الشحن فقط طالما أن حالة الطلب 'processing'. بعد شحن الطلب لا تستطيع Lumora تغيير العنوان؛ قد تتمكن من إعادة توجيه الطرد عبر موقع شركة الشحن باستخدام رقم التتبع.",
+    "policy_tags": [
+      "address_change"
+    ]
+  },
+  {
+    "id": "KB-017",
+    "title": "International shipping and customs",
+    "category": "shipping",
+    "body": "Lumora ships to 40 countries. International delivery takes 7-14 business days. Import duties and taxes are not included in the price and are paid by the recipient on delivery. Packages refused at customs are refunded minus the original shipping cost.",
+    "title_ar": "الشحن الدولي والجمارك",
+    "body_ar": "تشحن Lumora إلى 40 دولة. يستغرق التوصيل الدولي 7-14 يوم عمل. رسوم الاستيراد والضرائب غير مشمولة في السعر ويدفعها المستلم عند التسليم. الطرود المرفوضة في الجمارك يُسترد ثمنها مع خصم تكلفة الشحن الأصلية.",
+    "policy_tags": [
+      "international"
+    ]
+  },
+  {
+    "id": "KB-018",
+    "title": "Pairing Aero earbuds and headphones",
+    "category": "technical",
+    "body": "To pair: place both earbuds in the case, keep the lid open, and hold the case button for 5 seconds until the light flashes white. Then select 'Aero' in your device's Bluetooth menu. If pairing fails, remove 'Aero' from the Bluetooth list and repeat. Aero Max headphones: hold the power button for 7 seconds.",
+    "title_ar": "ربط سماعات Aero",
+    "body_ar": "للربط: ضع السماعتين في العلبة، اترك الغطاء مفتوحاً، واضغط زر العلبة لمدة 5 ثوانٍ حتى يومض الضوء باللون الأبيض. ثم اختر 'Aero' من قائمة Bluetooth في جهازك. إذا فشل الربط، احذف 'Aero' من قائمة Bluetooth وكرر الخطوات. سماعات Aero Max: اضغط زر التشغيل لمدة 7 ثوانٍ.",
+    "policy_tags": [
+      "pairing"
+    ]
+  },
+  {
+    "id": "KB-019",
+    "title": "Pulse smartwatch not syncing",
+    "category": "technical",
+    "body": "Make sure the Lumora app is updated and Bluetooth is on. In the app go to Devices > Pulse > Resync. If that fails, restart the watch by holding the side button for 15 seconds, then unpair and pair it again. Data stored on the watch is kept for 7 days if sync fails.",
+    "title_ar": "ساعة Pulse لا تتزامن",
+    "body_ar": "تأكد من تحديث تطبيق Lumora وتشغيل Bluetooth. في التطبيق اذهب إلى Devices > Pulse > Resync. إذا لم ينجح ذلك، أعد تشغيل الساعة بالضغط على الزر الجانبي لمدة 15 ثانية، ثم ألغِ الربط وأعد الربط. تُحفظ البيانات على الساعة لمدة 7 أيام إذا فشلت المزامنة.",
+    "policy_tags": [
+      "sync"
+    ]
+  },
+  {
+    "id": "KB-020",
+    "title": "Nimbus router setup and reset",
+    "category": "technical",
+    "body": "Set up Nimbus routers with the Lumora app: connect the main unit to your modem, power it on, and follow Add device > Nimbus. For a 3-pack, add satellites one at a time within 10 meters of the main unit. To factory reset, hold the reset pin for 10 seconds until the light turns amber.",
+    "title_ar": "إعداد راوتر Nimbus وإعادة ضبطه",
+    "body_ar": "أعدّ راوتر Nimbus عبر تطبيق Lumora: صِل الوحدة الرئيسية بالمودم، شغّلها، واتبع Add device > Nimbus. في حزمة الثلاث قطع، أضف الوحدات الفرعية واحدة تلو الأخرى على بعد 10 أمتار كحد أقصى من الوحدة الرئيسية. لإعادة ضبط المصنع، اضغط على زر إعادة الضبط لمدة 10 ثوانٍ حتى يتحول الضوء إلى اللون الكهرماني.",
+    "policy_tags": [
+      "router"
+    ]
+  },
+  {
+    "id": "KB-021",
+    "title": "Sentinel camera offline",
+    "category": "technical",
+    "body": "If a Sentinel camera shows offline: check that your Wi-Fi is 2.4 GHz (5 GHz is not supported), power cycle the camera for 30 seconds, and move it closer to the router if signal is weak. If it is still offline, remove and re-add it in the app.",
+    "title_ar": "كاميرا Sentinel غير متصلة",
+    "body_ar": "إذا ظهرت كاميرا Sentinel غير متصلة: تأكد أن شبكة Wi-Fi بتردد 2.4 GHz (تردد 5 GHz غير مدعوم)، أطفئ الكاميرا وشغّلها بعد 30 ثانية، وقرّبها من الراوتر إذا كانت الإشارة ضعيفة. إذا بقيت غير متصلة، احذفها وأضفها من جديد في التطبيق.",
+    "policy_tags": [
+      "camera_offline"
+    ]
+  },
+  {
+    "id": "KB-022",
+    "title": "Firmware updates",
+    "category": "technical",
+    "body": "Lumora devices update firmware automatically overnight when connected and charging. To update manually, open the Lumora app > Devices > select device > Check for updates. Do not unplug a device during an update.",
+    "title_ar": "تحديثات البرامج الثابتة",
+    "body_ar": "تُحدّث أجهزة Lumora برامجها الثابتة تلقائياً ليلاً عندما تكون متصلة وفي وضع الشحن. للتحديث يدوياً، افتح تطبيق Lumora > Devices > اختر الجهاز > Check for updates. لا تفصل الجهاز أثناء التحديث.",
+    "policy_tags": [
+      "firmware"
+    ]
+  },
+  {
+    "id": "KB-023",
+    "title": "Battery safety: overheating, swelling, or smoke",
+    "category": "technical",
+    "body": "If a device is overheating, swelling, smoking, or smells of burning: stop using it immediately, unplug it, do not charge it, and keep it away from flammable materials. Contact Lumora support; safety cases are handled with top priority by a specialist and the device is replaced free of charge regardless of warranty status.",
+    "title_ar": "سلامة البطارية: سخونة شديدة أو انتفاخ أو دخان",
+    "body_ar": "إذا كان الجهاز يسخن بشدة أو منتفخاً أو يخرج منه دخان أو رائحة احتراق: توقف عن استخدامه فوراً، افصله عن الكهرباء، لا تشحنه، وأبعده عن المواد القابلة للاشتعال. تواصل مع دعم Lumora؛ حالات السلامة يتولاها مختص بأولوية قصوى ويُستبدل الجهاز مجاناً بغض النظر عن حالة الضمان.",
+    "policy_tags": [
+      "safety",
+      "battery"
+    ]
+  },
+  {
+    "id": "KB-024",
+    "title": "Warranty coverage",
+    "category": "technical",
+    "body": "All Lumora devices carry a 1-year limited warranty from the delivery date covering manufacturing defects. Lumora Business members get a 2-year warranty. Accidental damage, water damage, and normal battery wear are not covered. Final sale refurbished items carry a 90-day warranty.",
+    "title_ar": "تغطية الضمان",
+    "body_ar": "جميع أجهزة Lumora عليها ضمان محدود لمدة سنة واحدة من تاريخ التسليم يغطي عيوب التصنيع. أعضاء Lumora Business يحصلون على ضمان لمدة سنتين. الأضرار العرضية وأضرار المياه والتآكل الطبيعي للبطارية غير مشمولة. منتجات البيع النهائي المجددة عليها ضمان لمدة 90 يوماً.",
+    "policy_tags": [
+      "warranty"
+    ]
+  },
+  {
+    "id": "KB-025",
+    "title": "Resetting your password",
+    "category": "account",
+    "body": "Use 'Forgot password' on the sign-in page. The reset link is valid for 1 hour and can be used once. If the email doesn't arrive within 10 minutes, check spam and make sure you are using the email on your account. Requesting a new link invalidates older links.",
+    "title_ar": "إعادة تعيين كلمة المرور",
+    "body_ar": "استخدم 'Forgot password' في صفحة تسجيل الدخول. رابط إعادة التعيين صالح لمدة ساعة واحدة ويُستخدم مرة واحدة. إذا لم يصل البريد خلال 10 دقائق، تحقق من مجلد الرسائل غير المرغوب فيها وتأكد من استخدام البريد المسجل في حسابك. طلب رابط جديد يُبطل الروابط السابقة.",
+    "policy_tags": [
+      "password"
+    ]
+  },
+  {
+    "id": "KB-026",
+    "title": "Locked accounts and two-factor authentication",
+    "category": "account",
+    "body": "After 5 failed sign-in attempts the account is locked for 30 minutes and then unlocks automatically. If you lost access to your two-factor authentication device, use one of your backup codes. Without backup codes, a support specialist must verify your identity before 2FA can be removed; this cannot be done automatically.",
+    "title_ar": "الحسابات المقفلة والتحقق بخطوتين",
+    "body_ar": "بعد 5 محاولات دخول فاشلة يُقفل الحساب لمدة 30 دقيقة ثم يُفتح تلقائياً. إذا فقدت جهاز التحقق بخطوتين، استخدم أحد رموز النسخ الاحتياطي. بدون رموز احتياطية، يجب أن يتحقق مختص الدعم من هويتك قبل إزالة التحقق بخطوتين؛ ولا يمكن تنفيذ ذلك تلقائياً.",
+    "policy_tags": [
+      "lockout",
+      "2fa"
+    ]
+  },
+  {
+    "id": "KB-027",
+    "title": "Updating your email or profile",
+    "category": "account",
+    "body": "Change your name, phone number, or email under Account > Profile. Changing the email sends a confirmation link to the new address and a notice to the old address. Lumora support will never change an account email on request through a ticket.",
+    "title_ar": "تحديث البريد الإلكتروني أو الملف الشخصي",
+    "body_ar": "غيّر اسمك أو رقم هاتفك أو بريدك من Account > Profile. تغيير البريد يرسل رابط تأكيد إلى العنوان الجديد وإشعاراً إلى العنوان القديم. لن يقوم دعم Lumora أبداً بتغيير بريد الحساب بناءً على طلب عبر تذكرة.",
+    "policy_tags": [
+      "profile"
+    ]
+  },
+  {
+    "id": "KB-028",
+    "title": "Closing your account and deleting data",
+    "category": "account",
+    "body": "Request account deletion under Account > Privacy > Delete account. Deletion is completed within 30 days. Order records are kept for 7 years where required by tax law. Active memberships are cancelled without refund unless within the window in KB-011.",
+    "title_ar": "إغلاق الحساب وحذف البيانات",
+    "body_ar": "اطلب حذف الحساب من Account > Privacy > Delete account. يكتمل الحذف خلال 30 يوماً. تُحفظ سجلات الطلبات لمدة 7 سنوات حيث يتطلب قانون الضرائب ذلك. تُلغى العضويات النشطة دون استرداد إلا ضمن المدة المذكورة في KB-011.",
+    "policy_tags": [
+      "deletion",
+      "privacy"
+    ]
+  },
+  {
+    "id": "KB-029",
+    "title": "Contacting support and response times",
+    "category": "other",
+    "body": "Lumora support is available by email and chat, Monday to Saturday, 8 am - 8 pm. Typical first response time is under 4 hours during opening hours. Safety, legal, and account security issues are prioritized.",
+    "title_ar": "التواصل مع الدعم وأوقات الاستجابة",
+    "body_ar": "دعم Lumora متاح عبر البريد الإلكتروني والدردشة من الاثنين إلى السبت، من 8 صباحاً حتى 8 مساءً. متوسط وقت الرد الأول أقل من 4 ساعات خلال ساعات العمل. تُعطى الأولوية لقضايا السلامة والقضايا القانونية وأمان الحسابات.",
+    "policy_tags": [
+      "support"
+    ]
+  },
+  {
+    "id": "KB-030",
+    "title": "Price adjustments and promo codes",
+    "category": "other",
+    "body": "If Lumora lowers the price of an item within 14 days of your purchase, we refund the difference once per order on request. Lumora does not match competitor prices. Only one promo code can be used per order, and promo codes cannot be applied after an order is placed.",
+    "title_ar": "تعديل الأسعار وأكواد الخصم",
+    "body_ar": "إذا خفّضت Lumora سعر منتج خلال 14 يوماً من شرائك، نعيد لك الفرق مرة واحدة لكل طلب عند الطلب. لا تطابق Lumora أسعار المنافسين. يمكن استخدام كود خصم واحد فقط لكل طلب، ولا يمكن تطبيق أكواد الخصم بعد تقديم الطلب.",
+    "policy_tags": [
+      "price_match",
+      "promo"
+    ]
+  }
+]
