@@ -32,8 +32,42 @@ def gate(triage: TriageResult, agent: AgentResult) -> tuple[TicketStatus, list[s
     if triage.injection_suspected:
         reasons.append("suspected prompt injection")
     reasons += human_actions_required(agent)
+    reasons += policy_review_reasons(triage, agent)
 
     return (TicketStatus.in_review if reasons else TicketStatus.ready_to_send), reasons
+
+
+# Signals (triage_rules) whose request needs a decision or action only a person can take.
+ALWAYS_REVIEW_SIGNALS = {
+    "account_recovery": "2FA/lockout recovery: identity verification needs a human (KB-026)",
+    "account_change_request": "request to change the login email to a given address: never done via ticket (KB-027)",
+    "churn_risk": "churn risk (repeat contact or cancellation threat): needs a human touch",
+    "promo_adjustment": "retroactive promo/discount = manual price adjustment",
+}
+
+
+def _traced_orders(agent: AgentResult) -> list[dict]:
+    return [c.result for c in agent.trace
+            if c.tool == "get_order" and isinstance(c.result, dict) and "error" not in c.result]
+
+
+def policy_review_reasons(triage: TriageResult, agent: AgentResult) -> list[str]:
+    """Second deterministic layer, added after the full eval found 5 confident, wrong auto-sends
+    (EV-27/28/29/44/49). Model confidence is not a safety signal: these were all at 0.9-1.0."""
+    signals = set(triage.urgency_signals)
+    reasons = [why for sig, why in ALWAYS_REVIEW_SIGNALS.items() if sig in signals]
+    orders = _traced_orders(agent)
+    if "address_change" in signals:
+        reasons += [f"{o['id']} is {o['status']}: address can't be changed by a reply (KB-016)"
+                    for o in orders if o.get("status") != "processing"]
+    if "warranty_claim" in signals:
+        for o in orders:
+            w = o.get("warranty") or {}
+            if w.get("applies") and not w.get("in_warranty"):
+                reasons.append(f"{o['id']} out of warranty: any exception is a human decision (KB-024)")
+            elif w.get("applies"):
+                reasons.append(f"{o['id']} warranty claim: replacement must be issued by a human (KB-024)")
+    return reasons
 
 
 LATE_TRACE_BUSINESS_DAYS = 5  # KB-014: 5+ business days past ETA -> support opens a carrier trace

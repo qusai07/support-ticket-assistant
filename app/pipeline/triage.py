@@ -62,9 +62,13 @@ def triage(ticket: TicketIn) -> TriageResult:
 
     # very_negative drives escalation, so it needs a second, independent signal.
     sentiment, score = llm.sentiment, llm.sentiment_score
-    angry = rules.has_anger_cues(text, ignore_caps=injection)
+    cues = rules.anger_cue_count(text, ignore_caps=injection)
+    angry = cues >= 1
     if sentiment == Sentiment.very_negative and not angry:
         sentiment, score = Sentiment.negative, max(score, -0.6)
+    elif sentiment == Sentiment.negative and cues >= rules.STRONG_ANGER_CUES:
+        # Two independent signals agree (LLM says negative + strong lexical anger) -> very negative.
+        sentiment, score = Sentiment.very_negative, min(score, -0.85)
     if angry and "anger" not in signals:
         signals.append("anger")
 

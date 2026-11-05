@@ -64,6 +64,33 @@ SIGNAL_PATTERNS: dict[str, list[str]] = {
                r"\bd[ou](kh|5)an\b", r"\b7ari(2|q)a\b", r"\bet?n?fa(kh|5)\b"],  # Arabizi: smoke, fire, swelled
     "fraud": [r"\bhack(ed|er)?\b", r"didn'?t place", r"\bunauthori[sz]ed\b", r"\bstolen account",
               r"password was changed"],
+    # ---- "needs a person" signals (found by the full eval: EV-27/28/29/44/49 were auto-sent).
+    # They don't escalate; they block auto-send (see hitl.policy_review_reasons). Arabic regexes
+    # are written in normalized form (ة->ه, أ->ا, ى->ي) because they run on normalize(text).
+    "account_recovery": [
+        r"(2fa|two[- ]factor|two[- ]step|authenticator|backup codes?).{0,80}(lost|locked|can'?t|cannot|no (longer|access)|don'?t have|new phone)",
+        r"(lost|locked|can'?t|cannot|no (longer|access)|new phone|don'?t have).{0,80}(2fa|two[- ]factor|two[- ]step|authenticator|backup codes?)",
+        r"locked out of (my )?account"],
+    # A request for US to change the login email to a given address = account-takeover pattern (KB-027).
+    # "How do I change my email?" (self-service how-to) does not match: it has no target address.
+    "account_change_request": [
+        r"(change|update|switch|replace|move)\b.{0,50}\be-?mail\b.{0,60}\bto\s+[\w.+-]+@[\w-]+\.\w+",
+        r"(غير|تغيير|حدث|تحديث|بدل|تبديل).{0,40}(الايميل|البريد|ايميلي|بريدي).{0,60}[\w.+-]+@[\w-]+\.\w+"],
+    "churn_risk": [
+        r"\bcancel(l?ing)?\b.{0,25}\b(membership|subscription)\b",
+        r"\b(third|fourth|fifth|\d+(st|nd|rd|th)) time\b", r"\bkeep (writing|contacting|emailing)\b",
+        r"\bswitch(ing)? to (a |another )?(competitor|different (brand|company))",
+        r"\bnever (buy|order|shop)\w* .{0,30}again"],
+    "address_change": [
+        r"(change|update|correct|fix|edit)\b.{0,30}\b(?<!email )(?<!e-mail )address\b", r"\bwrong address\b",
+        r"(غير|تغيير|تعديل|اعدل|اغير|بدل|تبديل).{0,20}العنوان", r"عنوان (غلط|خطا)"],
+    # Retroactive promo = a manual price adjustment. "Can I use two promo codes?" (a policy question) does not match.
+    "promo_adjustment": [
+        r"(promo|coupon|discount|voucher)( code)?.{0,40}(didn'?t|did not|wasn'?t|was not|not|never|failed).{0,15}(appl|work)",
+        r"forgot (to (use|apply|enter) )?(my |the )?(promo|coupon|discount|voucher)",
+        r"(كود|كوبون|بروموكود).{0,30}(ما|لم|مش|ماش).{0,10}(انطبق|اشتغل|تطبق|يشتغل|يتطبق|ينطبق)",
+        r"نسيت.{0,15}(الكود|الكوبون|كود)"],
+    "warranty_claim": [r"\bwarrant(y|ies)\b", r"\bguarantee\b", r"ضمان", r"كفاله"],
 }
 
 AR_SIGNAL_TERMS: dict[str, list[str]] = {
@@ -77,6 +104,11 @@ AR_SIGNAL_TERMS: dict[str, list[str]] = {
                "ذاب الكيبل", "ذاب الشاحن", "ساح", "انفجر", "شراره", "ريحه حريق"],  # not bare "ذاب": it is inside "عذاب"
     "fraud": ["اختراق", "مخترق", "تهكير", "اتهكر", "انهكر", "سرقه الحساب", "طلبات ما طلبتها",
               "طلبات لم اطلبها", "غير مصرح", "تغيير كلمه المرور", "تغيرت كلمه السر"],
+    "account_recovery": ["التحقق بخطوتين", "المصادقه الثنائيه", "ضاع جوالي", "ضاع تلفوني", "ضاع موبايلي",
+                         "انقفل حسابي", "قفل حسابي", "ما اقدر ادخل حسابي", "مش قادر ادخل", "رموز الاحتياط"],
+    "churn_risk": ["ثالث مره", "المره الثالثه", "للمره الثالثه", "رابع مره", "الغي اشتراكي", "الغي العضويه",
+                   "الغي عضويتي", "الغاء الاشتراك", "الغاء العضويه", "ما راح اتعامل معكم", "مش هتعامل معاكم",
+                   "اخر مره اشتري"],
 }
 
 INJECTION_PATTERNS = [
@@ -109,21 +141,29 @@ def detect_signals(text: str) -> list[str]:
     t = normalize(text)
     found = []
     for name in SIGNAL_PATTERNS:
-        if any(re.search(p, t) for p in SIGNAL_PATTERNS[name]) or any(x in t for x in _AR_SIGNAL_NORM[name]):
+        if any(re.search(p, t) for p in SIGNAL_PATTERNS[name]) or any(x in t for x in _AR_SIGNAL_NORM.get(name, [])):
             found.append(name)
     return found
 
 
-def has_anger_cues(text: str, ignore_caps: bool = False) -> bool:
-    """Lexical anger: insult words (EN/AR), 2+ fully-capitalized words, or '!!'.
-    ignore_caps: injection payloads ("SYSTEM OVERRIDE") use capitals without anger."""
+def anger_cue_count(text: str, ignore_caps: bool = False) -> int:
+    """Independent lexical anger cues: each distinct insult word (EN/AR), 2+ fully-capitalized
+    words, and '!!'. ignore_caps: injection payloads ("SYSTEM OVERRIDE") use capitals without anger."""
     t = normalize(text)
-    if any(re.search(p, t) for p in ANGER_WORDS) or any(x in t for x in _AR_ANGER_NORM):
-        return True
-    if ignore_caps:
-        return "!!" in text
-    caps_words = [w for w in re.findall(r"\b[A-Z]{3,}\b", text) if not w.startswith("ORD")]
-    return len(caps_words) >= 2 or "!!" in text
+    n = sum(bool(re.search(p, t)) for p in ANGER_WORDS) + sum(x in t for x in _AR_ANGER_NORM)
+    n += "!!" in text
+    if not ignore_caps:
+        n += len([w for w in re.findall(r"\b[A-Z]{3,}\b", text) if not w.startswith("ORD")]) >= 2
+    return n
+
+
+def has_anger_cues(text: str, ignore_caps: bool = False) -> bool:
+    return anger_cue_count(text, ignore_caps) >= 1
+
+
+# 2+ independent cues = strong anger. The 3B model under-rates Arabic anger (EV-59: "اسوا شركه
+# ... نصابين!!" scored only "negative"), so strong lexical evidence can raise the sentiment.
+STRONG_ANGER_CUES = 2
 
 
 def detect_injection(text: str) -> bool:

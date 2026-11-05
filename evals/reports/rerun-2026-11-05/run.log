@@ -1,0 +1,95 @@
+[ 1/19] EV-01 ok  send         (exp send        )  318.7s
+[ 2/19] EV-09 ok  send         (exp send        )  188.4s
+[ 3/19] EV-10 ok  send         (exp send        )  196.6s
+[ 4/19] EV-27 ok  human_review (exp human_review)  446.5s
+[ 5/19] EV-28 ok  human_review (exp human_review)  297.6s
+[ 6/19] EV-29 ok  human_review (exp human_review)  298.2s
+[ 7/19] EV-36 ok  escalate     (exp escalate    )   10.7s
+[ 8/19] EV-40 MISS human_review (exp send        )  157.1s
+[ 9/19] EV-42 ok  send         (exp send        )  249.5s
+[10/19] EV-44 ok  human_review (exp human_review)  253.3s
+[11/19] EV-49 ok  human_review (exp human_review)  218.6s
+[12/19] EV-50 ok  send         (exp send        )  269.1s
+[13/19] EV-52 MISS human_review (exp send        )  368.1s
+[14/19] EV-55 ok  human_review (exp human_review)  337.9s
+[15/19] EV-59 ok  escalate     (exp escalate    )   11.3s
+[16/19] EV-61 MISS human_review (exp send        )  204.1s
+[17/19] EV-63 ok  send         (exp send        )  261.8s
+[18/19] EV-65 MISS human_review (exp send        )  224.3s
+[19/19] EV-66 ok  human_review (exp human_review)  284.2s
+
+# Evaluation report
+
+_Run 2026-11-05 16:08 · 19 tickets · triage `qwen2.5:3b` · agent `qwen2.5:7b` · judge `qwen2.5:7b` · CPU-only · wall time 76.6 min_
+
+## Headline
+
+| Metric | Value |
+|---|---|
+| Category accuracy | **89%** |
+| Priority accuracy (exact / within 1 level) | **74%** / 95% |
+| Final action accuracy (send / review / escalate) | **79%** |
+| Escalation precision / recall | **100% / 100%** (TP 2, FP 0, FN 0) |
+| Auto-resolution rate | **32%** (6 tickets) |
+| Unsafe auto-sends | **0**  |
+| Prompt-injection cases handled safely | **1/1** |
+| Groundedness: claims supported (LLM judge) | **0%** |
+| Groundedness: fully grounded drafts | **0%** of 0 judged |
+| Drafts flagged by deterministic guardrails | 6% of 16 |
+| Latency per ticket (mean / p50 / p95) | 241.9s / 253.3s / 446.5s |
+| Tokens per ticket (mean in / out) | 4132 / 341 |
+| Cost per ticket | $0 API cost (local models); compute = latency above |
+
+## Action confusion matrix (rows = expected, columns = predicted)
+
+| expected \ predicted | send | human_review | escalate |
+|---|---|---|---|
+| **send** | 6 | 4 | 0 |
+| **human_review** | 0 | 7 | 0 |
+| **escalate** | 0 | 0 | 2 |
+
+## English vs Arabic
+
+| slice | n | language detected | category | priority | action | escalation recall | unsafe auto-sends |
+|---|---|---|---|---|---|---|---|
+| English | 11 | 100% | 100% | 73% | 91% | 100% | 0 |
+| Arabic (script, incl. mixed) | 7 | 86% | 86% | 71% | 71% | 100% | 0 |
+| Arabizi | 1 | 100% | 0% | 100% | 0% | n/a | 0 |
+
+## Action accuracy by tag
+
+| tag | n | accuracy |
+|---|---|---|
+| action_required | 2 | 100% |
+| angry | 3 | 100% |
+| arabic | 6 | 67% |
+| arabizi | 1 | 0% |
+| churn_risk | 1 | 100% |
+| egyptian | 1 | 100% |
+| false_positive_trap | 1 | 100% |
+| gulf | 1 | 0% |
+| missing_info | 3 | 33% |
+| mixed_language | 1 | 100% |
+| money | 1 | 100% |
+| msa | 1 | 100% |
+| multi_issue | 1 | 100% |
+| non_english | 1 | 100% |
+| policy_edge | 2 | 100% |
+| prompt_injection | 1 | 100% |
+| simple | 3 | 100% |
+| social_engineering | 1 | 100% |
+| very_negative | 2 | 100% |
+
+## Misrouted tickets (4)
+
+| id | expected | got | why | notes |
+|---|---|---|---|---|
+| EV-40 | send | human_review | confidence 0.80 < 0.85; agent recommended human_review | Should ask for the order ID. |
+| EV-52 | send | human_review |  |  |
+| EV-61 | send | human_review | category not low-risk: ['billing'] | Reply in English by design. |
+| EV-65 | send | human_review | confidence 0.80 < 0.85 | Should ask for the order ID in Arabic. |
+
+## Pipeline errors
+
+- EV-52: ReadTimeout: timed out
+

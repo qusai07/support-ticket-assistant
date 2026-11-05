@@ -4,7 +4,7 @@ check_refund_eligibility is the refund policy (KB-006/007/009/010/015) written a
 code. The LLM never decides eligibility; it only explains this function's answer.
 """
 import json
-from datetime import date
+from datetime import date, timedelta
 from functools import lru_cache
 
 from app.config import DATA_DIR, get_settings
@@ -52,6 +52,39 @@ def customer_summary(c: Customer) -> dict:
         "is_vip": c.is_vip, "plan_renewed_at": c.plan_renewed_at, "order_ids": c.order_ids,
         "recent_tickets": [{"id": t.id, "subject": t.subject, "category": t.category.value} for t in past],
     }
+
+
+WARRANTY_MONTHS = 12            # KB-024: 1-year limited warranty from delivery
+WARRANTY_MONTHS_BUSINESS = 24   # KB-024: Business (enterprise plan) members get 2 years
+FINAL_SALE_WARRANTY_DAYS = 90   # KB-024: final-sale refurbished items
+
+
+def _add_months(d: date, months: int) -> date:
+    y, m = divmod(d.month - 1 + months, 12)
+    try:
+        return d.replace(year=d.year + y, month=m + 1)
+    except ValueError:  # e.g. Feb 29 -> Feb 28
+        return d.replace(year=d.year + y, month=m + 1, day=28)
+
+
+def warranty_status(order: Order, customer: Customer | None = None) -> dict:
+    """KB-024 as code. The model hallucinated "still covered" on a 20-month-old order
+    (eval EV-27), so the answer is computed here and shown to the model as a fact."""
+    if not order.delivered_at:
+        return {"applies": False, "reason": "Not delivered yet; warranty starts at delivery."}
+    delivered = date.fromisoformat(order.delivered_at)
+    business = customer is not None and customer.plan.value == "enterprise"
+    months = WARRANTY_MONTHS_BUSINESS if business else WARRANTY_MONTHS
+    items = []
+    for i in order.items:
+        if i.sku.startswith("FS-"):
+            expires = delivered + timedelta(days=FINAL_SALE_WARRANTY_DAYS)
+        else:
+            expires = _add_months(delivered, months)
+        items.append({"item": i.name, "warranty_expires_on": expires.isoformat(),
+                      "in_warranty": today() <= expires})
+    return {"applies": True, "delivered_at": order.delivered_at, "warranty_months": months,
+            "in_warranty": any(x["in_warranty"] for x in items), "items": items, "kb_refs": ["KB-024"]}
 
 
 def check_refund_eligibility(order: Order) -> dict:

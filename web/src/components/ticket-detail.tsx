@@ -6,7 +6,7 @@ import { useEffect, useState } from "react";
 import { api, post } from "@/lib/api";
 import { useAuth } from "@/lib/auth";
 import { timeAgo, useI18n } from "@/lib/i18n";
-import { ACTIONS, DECISIONS, ESC_SOURCES, label, LANGUAGES, ROUTING_KEYS, SENTIMENTS } from "@/lib/labels";
+import { ACTIONS, DECISIONS, ESC_SOURCES, label, LANGUAGES, ROUTING_KEYS, SENTIMENTS, SIGNALS } from "@/lib/labels";
 import type { TicketDetail } from "@/lib/types";
 import { Dropdown } from "./dropdown";
 import { SlaBadge, useTimeline, WorkflowPanel, WorkflowStepper } from "./workflow";
@@ -186,7 +186,7 @@ export function TicketDetailPanel({ id }: { id: string }) {
               </div>
               <div>
                 <Row label={t("ticket.signals")}><span className="flex flex-wrap justify-end gap-1">{tri.urgency_signals.length ? tri.urgency_signals.map((s) => (
-                  <Badge key={s} tone={["legal", "chargeback", "safety", "fraud"].includes(s) ? "danger" : "neutral"}>{s}</Badge>)) : "–"}</span></Row>
+                  <Badge key={s} tone={["legal", "chargeback", "safety", "fraud"].includes(s) ? "danger" : "neutral"}>{label(SIGNALS, s, lang)}</Badge>)) : "–"}</span></Row>
                 <Row label={t("ticket.orders")}><span dir="ltr">{tri.entities.order_ids.join(", ") || "–"}</span></Row>
                 <Row label={t("ticket.amounts")}><span dir="ltr">{tri.entities.amounts.map((a) => `$${a}`).join(", ") || "–"}</span></Row>
                 <Row label={t("ticket.missing")}>{tri.missing_info.join(", ") || "–"}</Row>

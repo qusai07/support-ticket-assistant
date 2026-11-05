@@ -20,7 +20,7 @@ TOOL_SPECS = [
         "parameters": {"type": "object", "properties": {"email": {"type": "string"}}, "required": ["email"]}}},
     {"type": "function", "function": {
         "name": "get_order",
-        "description": "Get an order's status, items, prices, tracking (carrier, number, ETA), delivery date and payment details.",
+        "description": "Get an order's status, items, prices, tracking (carrier, number, ETA), delivery date, payment details and computed warranty status (use it; never work out warranty dates yourself).",
         "parameters": {"type": "object", "properties": {"order_id": {"type": "string", "description": "e.g. ORD-10001"}},
                        "required": ["order_id"]}}},
     {"type": "function", "function": {
@@ -90,7 +90,11 @@ class ToolBox:
 
     def get_order(self, order_id: str) -> dict:
         order, err = self._owned_order(order_id)
-        return err or order.model_dump(mode="json")
+        if err:
+            return err
+        # Warranty is computed by code (KB-024) so the model explains it instead of guessing.
+        return {**order.model_dump(mode="json"),
+                "warranty": backend.warranty_status(order, backend.find_customer(self.email))}
 
     def search_kb(self, query: str) -> list[dict]:
         return [{"id": d.source_id, "title": d.title, "text": d.snippet}

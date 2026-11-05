@@ -37,6 +37,8 @@ ORDER_RE = re.compile(r"\bORD-\d{5}\b")
 MONEY_RE = re.compile(r"\$\s?(\d+(?:,\d{3})*(?:\.\d{1,2})?)")
 URL_RE = re.compile(r"(?:https?://|www\.)\S+")
 NUM_RE = re.compile(r"(?<![\w.])\d+(?:\.\d+)?(?![\w.])")
+# CJK, kana, hangul, Cyrillic: never valid in an English/Arabic reply.
+FOREIGN_SCRIPT_RE = re.compile(r"[぀-ヿ㐀-鿿가-힯Ѐ-ӿ]+")
 NOT_FOUND = {"order_not_found", "customer_not_found"}  # legitimate answers, not failures
 
 
@@ -128,6 +130,10 @@ def _guardrails(draft: _Draft, ticket: TicketIn, docs: list[RetrievedDoc], tools
     scrubbed = MONEY_RE.sub(" ", ORDER_RE.sub(" ", KB_ID_RE.sub(" ", draft.draft_reply)))
     if bad := sorted(nums(scrubbed) - nums(observed + "\n" + ticket_text)):
         flags.append(f"unverified_number:{bad}")
+
+    # Qwen models sometimes leak Chinese tokens into Arabic replies (eval EV-59 began with "情商").
+    if m := FOREIGN_SCRIPT_RE.search(draft.draft_reply):
+        flags.append(f"foreign_script:{m.group(0)}")
 
     if tools.escalations and draft.recommended_action != RecommendedAction.escalate:
         flags.append("escalation_created_but_not_recommended")

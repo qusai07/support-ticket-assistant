@@ -186,13 +186,17 @@ def main() -> None:
     ap = argparse.ArgumentParser()
     ap.add_argument("--ids", nargs="*")
     ap.add_argument("--no-judge", action="store_true")
+    ap.add_argument("--out", help="report folder (default evals/reports); use one per run to keep a baseline")
     args = ap.parse_args()
 
     cases = [LabeledTicket.model_validate(x) for x in json.loads((DATA_DIR / "eval_set.json").read_text("utf-8"))]
     if args.ids:
         cases = [c for c in cases if c.id in set(args.ids)]
 
-    REPORTS.mkdir(exist_ok=True)
+    global REPORTS
+    if args.out:
+        REPORTS = Path(args.out)
+    REPORTS.mkdir(parents=True, exist_ok=True)
     rows, t0 = [], time.perf_counter()
     for i, case in enumerate(cases, 1):
         row = run_case(case, use_judge=not args.no_judge)

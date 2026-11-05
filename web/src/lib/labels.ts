@@ -91,5 +91,16 @@ export const LANGUAGES: Record<string, L> = {
   unknown: { en: "Not classified", ar: "غير مصنّفة" },
 };
 
+/** Deterministic triage signals (app/pipeline/triage_rules.py). LLM-added signals are free text and fall back to the raw value. */
+export const SIGNALS: Record<string, L> = {
+  legal: { en: "Legal", ar: "قانوني" }, chargeback: { en: "Chargeback", ar: "اعتراض بنكي" },
+  safety: { en: "Safety", ar: "سلامة" }, fraud: { en: "Fraud", ar: "احتيال" },
+  charged_twice: { en: "Charged twice", ar: "خصم مكرر" }, cancel: { en: "Cancellation", ar: "إلغاء" },
+  anger: { en: "Anger", ar: "غضب" }, account_recovery: { en: "Account recovery", ar: "استعادة حساب" },
+  account_change_request: { en: "Account email change", ar: "طلب تغيير بريد الحساب" },
+  churn_risk: { en: "Churn risk", ar: "خطر فقدان العميل" }, address_change: { en: "Address change", ar: "تغيير العنوان" },
+  promo_adjustment: { en: "Promo adjustment", ar: "تعديل خصم" }, warranty_claim: { en: "Warranty claim", ar: "مطالبة ضمان" },
+};
+
 export const label = (m: Record<string, L>, k: string, lang: Lang) => pick(m, k, lang);
 export const desc = (m: Record<string, LD>, k: string, lang: Lang) => (lang === "ar" ? m[k]?.dar : m[k]?.den) ?? "";
