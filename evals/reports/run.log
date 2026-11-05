@@ -1,3 +1,46 @@
 [ 1/66] EV-01 ok  send         (exp send        )  251.1s
 [ 2/66] EV-02 ok  send         (exp send        )  180.3s
 [ 3/66] EV-03 ok  send         (exp send        )  178.4s
+[ 4/66] EV-04 ok  send         (exp send        )  250.0s
+[ 5/66] EV-05 ok  send         (exp send        )  194.6s
+[ 6/66] EV-06 ok  send         (exp send        )  140.8s
+[ 7/66] EV-07 ok  send         (exp send        )  161.3s
+[ 8/66] EV-08 ok  send         (exp send        )  155.8s
+[ 9/66] EV-09 ok  send         (exp send        )  145.7s
+[10/66] EV-10 ok  send         (exp send        )  146.2s
+[11/66] EV-11 ok  send         (exp send        )  143.1s
+[12/66] EV-12 ok  send         (exp send        )  132.2s
+[13/66] EV-13 ok  send         (exp send        )  163.8s
+[14/66] EV-14 ok  human_review (exp human_review)  253.4s
+[15/66] EV-15 ok  human_review (exp human_review)  227.3s
+[16/66] EV-16 ok  human_review (exp human_review)  336.5s
+[17/66] EV-17 ok  human_review (exp human_review)  208.7s
+[18/66] EV-18 ok  human_review (exp human_review)  311.6s
+[19/66] EV-19 ok  human_review (exp human_review)  196.5s
+[20/66] EV-20 ok  human_review (exp human_review)  308.8s
+[21/66] EV-21 ok  human_review (exp human_review)  265.6s
+[22/66] EV-22 ok  human_review (exp human_review)  257.8s
+[23/66] EV-23 ok  human_review (exp human_review)  349.0s
+[24/66] EV-24 ok  human_review (exp human_review)  352.1s
+[25/66] EV-25 ok  human_review (exp human_review)  343.4s
+[26/66] EV-26 ok  human_review (exp human_review)  279.7s
+[27/66] EV-27 MISS send         (exp human_review)  391.6s
+[28/66] EV-28 MISS send         (exp human_review)  209.8s
+[29/66] EV-29 MISS send         (exp human_review)  214.5s
+[30/66] EV-30 ok  escalate     (exp escalate    )    8.9s
+[31/66] EV-31 ok  escalate     (exp escalate    )   14.2s
+[32/66] EV-32 ok  escalate     (exp escalate    )   13.1s
+[33/66] EV-33 ok  escalate     (exp escalate    )   13.5s
+[34/66] EV-34 ok  escalate     (exp escalate    )   10.1s
+[35/66] EV-35 ok  escalate     (exp escalate    )    9.0s
+[36/66] EV-36 ok  escalate     (exp escalate    )   10.1s
+[37/66] EV-37 ok  escalate     (exp escalate    )   10.4s
+[38/66] EV-38 ok  escalate     (exp escalate    )    9.6s
+[39/66] EV-39 ok  escalate     (exp escalate    )    9.5s
+[40/66] EV-40 MISS human_review (exp send        )  127.6s
+[41/66] EV-41 ok  human_review (exp human_review)  133.2s
+[42/66] EV-42 MISS human_review (exp send        )  138.7s
+[43/66] EV-43 ok  human_review (exp human_review)  245.3s
+[44/66] EV-44 MISS send         (exp human_review)  287.4s
+[45/66] EV-45 ok  human_review (exp human_review)  389.7s
+[46/66] EV-46 ok  escalate     (exp escalate    )   42.6s
